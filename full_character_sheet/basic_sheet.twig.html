@@ -86,11 +86,11 @@
                     ? variables.athletics : 0 }}
                 </div>
                 <div class="col-md-2 font-weight-bold">
-                    Investigate
+                    Lore
                 </div>
                 <div class="col-md-4">
-                    +{{ variables.investigate is defined and variables.investigate is not empty and
-                    variables.investigate > 0 ? variables.investigate : 0 }}
+                    +{{ variables.lore is defined and variables.lore is not empty and
+                    variables.lore > 0 ? variables.lore : 0 }}
                 </div>
             </div>
             <div class="row">
@@ -134,11 +134,11 @@
                     ? variables.crafts : 0 }}
                 </div>
                 <div class="col-md-2 font-weight-bold">
-                    Rapport
+                    Provoke
                 </div>
                 <div class="col-md-4">
-                    +{{ variables.rapport is defined and variables.rapport is not empty and
-                    variables.rapport > 0 ? variables.rapport : 0 }}
+                    +{{ variables.provoke is defined and variables.provoke is not empty and
+                    variables.provoke > 0 ? variables.provoke : 0 }}
                 </div>
             </div>
             <div class="row">
@@ -150,11 +150,11 @@
                     ? variables.deceive : 0 }}
                 </div>
                 <div class="col-md-2 font-weight-bold">
-                    Resources
+                    Rapport
                 </div>
                 <div class="col-md-4">
-                    +{{ variables.resources is defined and variables.resources is not empty and
-                    variables.resources > 0 ? variables.resources : 0 }}
+                    +{{ variables.rapport is defined and variables.rapport is not empty and
+                    variables.rapport > 0 ? variables.rapport : 0 }}
                 </div>
             </div>
             <div class="row">
@@ -166,11 +166,11 @@
                     ? variables.drive : 0 }}
                 </div>
                 <div class="col-md-2 font-weight-bold">
-                    Shoot
+                    Resources
                 </div>
                 <div class="col-md-4">
-                    +{{ variables.shoot is defined and variables.shoot is not empty and
-                    variables.shoot > 0 ? variables.shoot : 0 }}
+                    +{{ variables.resources is defined and variables.resources is not empty and
+                    variables.resources > 0 ? variables.resources : 0 }}
                 </div>
             </div>
             <div class="row">
@@ -182,11 +182,11 @@
                     ? variables.empathy : 0 }}
                 </div>
                 <div class="col-md-2 font-weight-bold">
-                    Stealth
+                    Shoot
                 </div>
                 <div class="col-md-4">
-                    +{{ variables.stealth is defined and variables.stealth is not empty and
-                    variables.stealth > 0 ? variables.stealth : 0 }}
+                    +{{ variables.shoot is defined and variables.shoot is not empty and
+                    variables.shoot > 0 ? variables.shoot : 0 }}
                 </div>
             </div>
             <div class="row">
@@ -196,6 +196,22 @@
                 <div class="col-md-4">
                     +{{ variables.fight is defined and variables.fight is not empty and variables.fight > 0
                     ? variables.fight : 0 }}
+                </div>
+                <div class="col-md-2 font-weight-bold">
+                    Stealth
+                </div>
+                <div class="col-md-4">
+                    +{{ variables.stealth is defined and variables.stealth is not empty and
+                    variables.stealth > 0 ? variables.stealth : 0 }}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 font-weight-bold">
+                    Investigate
+                </div>
+                <div class="col-md-4">
+                    +{{ variables.investigate is defined and variables.investigate is not empty and
+                    variables.investigate > 0 ? variables.investigate : 0 }}
                 </div>
                 <div class="col-md-2 font-weight-bold">
                     Will

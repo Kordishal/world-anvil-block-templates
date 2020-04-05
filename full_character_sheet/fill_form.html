@@ -135,13 +135,13 @@
 						   >
                 </div>
                 <div class="col-md-3 font-weight-bold">
-                    Investigate
+                    Lore
                 </div>
                 <div class="col-md-3">
                     +<input type="number"
 						   placeholder=0
-						   value="{{ variables.investigate is defined and variables.investigate is not empty ? variables.investigate : 0 }}"
-						   name="investigate"
+						   value="{{ variables.lore is defined and variables.lore is not empty ? variables.lore : 0 }}"
+						   name="lore"
                             min=0
                             max=9
 						   >
@@ -213,13 +213,13 @@
 						   >
                 </div>
                 <div class="col-md-3 font-weight-bold">
-                    Rapport
+                    Provoke
                 </div>
                 <div class="col-md-3">
                     +<input type="number"
 						   placeholder=0
-						   value="{{ variables.rapport is defined and variables.rapport is not empty ? variables.rapport : 0 }}"
-						   name="rapport"
+						   value="{{ variables.provoke is defined and variables.provoke is not empty ? variables.provoke : 0 }}"
+						   name="provoke"
                             min=0
                             max=9
 						   >
@@ -239,13 +239,13 @@
 						   >
                 </div>
                 <div class="col-md-3 font-weight-bold">
-                    Resources
+                    Rapport
                 </div>
                 <div class="col-md-3">
                     +<input type="number"
 						   placeholder=0
-						   value="{{ variables.resources is defined and variables.resources is not empty ? variables.resources : 0 }}"
-						   name="resources"
+						   value="{{ variables.rapport is defined and variables.rapport is not empty ? variables.rapport : 0 }}"
+						   name="rapport"
                             min=0
                             max=9
 						   >
@@ -265,13 +265,13 @@
 						   >
                 </div>
                 <div class="col-md-3 font-weight-bold">
-                    Shoot
+                    Resources
                 </div>
                 <div class="col-md-3">
                     +<input type="number"
 						   placeholder=0
-						   value="{{ variables.shoot is defined and variables.shoot is not empty ? variables.shoot : 0 }}"
-						   name="shoot"
+						   value="{{ variables.resources is defined and variables.resources is not empty ? variables.resources : 0 }}"
+						   name="resources"
                             min=0
                             max=9
 						   >
@@ -291,13 +291,13 @@
 						   >
                 </div>
                 <div class="col-md-3 font-weight-bold">
-                    Stealth
+                    Shoot
                 </div>
                 <div class="col-md-3">
                     +<input type="number"
 						   placeholder=0
-						   value="{{ variables.stealth is defined and variables.stealth is not empty ? variables.stealth : 0 }}"
-						   name="stealth"
+						   value="{{ variables.shoot is defined and variables.shoot is not empty ? variables.shoot : 0 }}"
+						   name="shoot"
                             min=0
                             max=9
 						   >
@@ -312,6 +312,32 @@
 						   placeholder=0
 						   value="{{ variables.fight is defined and variables.fight is not empty ? variables.fight : 0 }}"
 						   name="fight"
+                            min=0
+                            max=9
+						   >
+                </div>
+                <div class="col-md-3 font-weight-bold">
+                    Stealth
+                </div>
+                <div class="col-md-3">
+                    +<input type="number"
+						   placeholder=0
+						   value="{{ variables.stealth is defined and variables.stealth is not empty ? variables.stealth : 0 }}"
+						   name="stealth"
+                            min=0
+                            max=9
+						   >
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 font-weight-bold">
+                    Investigate
+                </div>
+                <div class="col-md-3">
+                    +<input type="number"
+						   placeholder=0
+						   value="{{ variables.investigate is defined and variables.investigate is not empty ? variables.investigate : 0 }}"
+						   name="investigate"
                             min=0
                             max=9
 						   >

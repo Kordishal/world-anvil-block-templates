@@ -70,6 +70,11 @@ fields:
     label: "Investigate"
     min: 0
     max: 5
+  lore:
+    input: integer
+    label: "Lore"
+    min: 0
+    max: 5
   notice:
     input: integer
     label: "Notice"
@@ -78,6 +83,11 @@ fields:
   physique:
     input: integer
     label: "Physique"
+    min: 0
+    max: 5
+  provoke:
+    input: integer
+    label: "Provoke"
     min: 0
     max: 5
   rapport:

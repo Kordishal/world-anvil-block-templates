@@ -22,13 +22,13 @@
             </div>
             <div class="row">
                 <div class="col-md text-center border border-dark large-font p-0">
-					<input  value="{{ variables.fate_points is defined ? variables.fate_points }}"
-                            class="form-control m-0 p-0"
-                            id="fate_points"
-                            name="fate_points"
-                            placeholder=""
-                            type="number"
-                            min=0>
+                    <input value="{{ variables.fate_points is defined ? variables.fate_points }}"
+                           class="form-control m-0 p-0"
+                           id="fate_points"
+                           name="fate_points"
+                           placeholder=""
+                           type="number"
+                           min=0>
                 </div>
             </div>
         </div>
@@ -50,10 +50,10 @@
                 <div class="col-md m-0 p-0">
                     <input type="text"
                            class="form-control m-0 p-0" id="high_concept"
-						   placeholder="Enter aspect ..."
-						   value="{{ variables.high_concept is defined and variables.high_concept is not empty ? variables.high_concept : 'Enter aspect ...' }}"
-						   name="high_concept"
-						   >
+                           placeholder="Enter aspect ..."
+                           value="{{ variables.high_concept is defined and variables.high_concept is not empty ? variables.high_concept : 'Enter aspect ...' }}"
+                           name="high_concept"
+                    >
                 </div>
             </div>
             <div class="row">
@@ -63,10 +63,10 @@
                 <div class="col-md m-0 p-0">
                     <input type="text"
                            class="form-control m-0 p-0" id="trouble"
-						   placeholder="Enter aspect ..."
-						   value="{{ variables.trouble is defined and variables.trouble is not empty ? variables.trouble : 'Enter aspect ...' }}"
-						   name="trouble"
-						   >
+                           placeholder="Enter aspect ..."
+                           value="{{ variables.trouble is defined and variables.trouble is not empty ? variables.trouble : 'Enter aspect ...' }}"
+                           name="trouble"
+                    >
                 </div>
             </div>
             <div class="row">
@@ -75,10 +75,10 @@
                 <div class="col-md m-0 p-0">
                     <input type="text"
                            class="form-control m-0 p-0" id="character_aspect_1"
-						   placeholder="Enter aspect ..."
-						   value="{{ variables.character_aspect_1 is defined and variables.character_aspect_1 is not empty ? variables.character_aspect_1 : 'Enter aspect ...' }}"
-						   name="character_aspect_1"
-						   >
+                           placeholder="Enter aspect ..."
+                           value="{{ variables.character_aspect_1 is defined and variables.character_aspect_1 is not empty ? variables.character_aspect_1 : 'Enter aspect ...' }}"
+                           name="character_aspect_1"
+                    >
                 </div>
             </div>
             <div class="row">
@@ -87,10 +87,10 @@
                 <div class="col-md m-0 p-0">
                     <input type="text"
                            class="form-control m-0 p-0" id="character_aspect_2"
-						   placeholder="Enter aspect ..."
-						   value="{{ variables.character_aspect_2 is defined and variables.character_aspect_2 is not empty ? variables.character_aspect_2 : 'Enter aspect ...' }}"
-						   name="character_aspect_2"
-						   >
+                           placeholder="Enter aspect ..."
+                           value="{{ variables.character_aspect_2 is defined and variables.character_aspect_2 is not empty ? variables.character_aspect_2 : 'Enter aspect ...' }}"
+                           name="character_aspect_2"
+                    >
                 </div>
             </div>
             <div class="row">
@@ -99,10 +99,10 @@
                 <div class="col-md m-0 p-0">
                     <input type="text"
                            class="form-control m-0 p-0" id="character_aspect_3"
-						   placeholder="Enter aspect ..."
-						   value="{{ variables.character_aspect_3 is defined and variables.character_aspect_3 is not empty ? variables.character_aspect_3 : 'Enter aspect ...' }}"
-						   name="character_aspect_3"
-						   >
+                           placeholder="Enter aspect ..."
+                           value="{{ variables.character_aspect_3 is defined and variables.character_aspect_3 is not empty ? variables.character_aspect_3 : 'Enter aspect ...' }}"
+                           name="character_aspect_3"
+                    >
                 </div>
             </div>
         </div>
@@ -113,24 +113,24 @@
                 </div>
                 <div class="col-md-3">
                     +<input type="number"
-						   placeholder=0
-						   value="{{ variables.athletics is defined and variables.athletics is not empty ? variables.athletics : 0 }}"
-						   name="athletics"
+                            placeholder=0
+                            value="{{ variables.athletics is defined and variables.athletics is not empty ? variables.athletics : 0 }}"
+                            name="athletics"
                             min=0
                             max=9
-						   >
+                >
                 </div>
                 <div class="col-md-3 font-weight-bold">
-                    Investigate
+                    Lore
                 </div>
                 <div class="col-md-3">
                     +<input type="number"
-						   placeholder=0
-						   value="{{ variables.investigate is defined and variables.investigate is not empty ? variables.investigate : 0 }}"
-						   name="investigate"
+                            placeholder=0
+                            value="{{ variables.lore is defined and variables.lore is not empty ? variables.lore : 0 }}"
+                            name="lore"
                             min=0
                             max=9
-						   >
+                >
                 </div>
             </div>
             <div class="row">
@@ -139,24 +139,24 @@
                 </div>
                 <div class="col-md-3">
                     +<input type="number"
-						   placeholder=0
-						   value="{{ variables.burglary is defined and variables.burglary is not empty ? variables.burglary : 0 }}"
-						   name="burglary"
+                            placeholder=0
+                            value="{{ variables.burglary is defined and variables.burglary is not empty ? variables.burglary : 0 }}"
+                            name="burglary"
                             min=0
                             max=9
-						   >
+                >
                 </div>
                 <div class="col-md-3 font-weight-bold">
                     Notice
                 </div>
                 <div class="col-md-3">
                     +<input type="number"
-						   placeholder=0
-						   value="{{ variables.notice is defined and variables.notice is not empty ? variables.notice : 0 }}"
-						   name="notice"
+                            placeholder=0
+                            value="{{ variables.notice is defined and variables.notice is not empty ? variables.notice : 0 }}"
+                            name="notice"
                             min=0
                             max=9
-						   >
+                >
                 </div>
             </div>
             <div class="row">
@@ -165,24 +165,24 @@
                 </div>
                 <div class="col-md-3">
                     +<input type="number"
-						   placeholder=0
-						   value="{{ variables.contacts is defined and variables.contacts is not empty ? variables.contacts : 0 }}"
-						   name="contacts"
+                            placeholder=0
+                            value="{{ variables.contacts is defined and variables.contacts is not empty ? variables.contacts : 0 }}"
+                            name="contacts"
                             min=0
                             max=9
-						   >
+                >
                 </div>
                 <div class="col-md-3 font-weight-bold">
                     Physique
                 </div>
                 <div class="col-md-3">
                     +<input type="number"
-						   placeholder=0
-						   value="{{ variables.physique is defined and variables.physique is not empty ? variables.physique : 0 }}"
-						   name="physique"
+                            placeholder=0
+                            value="{{ variables.physique is defined and variables.physique is not empty ? variables.physique : 0 }}"
+                            name="physique"
                             min=0
                             max=9
-						   >
+                >
                 </div>
             </div>
             <div class="row">
@@ -191,24 +191,24 @@
                 </div>
                 <div class="col-md-3">
                     +<input type="number"
-						   placeholder=0
-						   value="{{ variables.crafts is defined and variables.crafts is not empty ? variables.crafts : 0 }}"
-						   name="crafts"
+                            placeholder=0
+                            value="{{ variables.crafts is defined and variables.crafts is not empty ? variables.crafts : 0 }}"
+                            name="crafts"
                             min=0
                             max=9
-						   >
+                >
                 </div>
                 <div class="col-md-3 font-weight-bold">
-                    Rapport
+                    Provoke
                 </div>
                 <div class="col-md-3">
                     +<input type="number"
-						   placeholder=0
-						   value="{{ variables.rapport is defined and variables.rapport is not empty ? variables.rapport : 0 }}"
-						   name="rapport"
+                            placeholder=0
+                            value="{{ variables.provoke is defined and variables.provoke is not empty ? variables.provoke : 0 }}"
+                            name="provoke"
                             min=0
                             max=9
-						   >
+                >
                 </div>
             </div>
             <div class="row">
@@ -217,24 +217,24 @@
                 </div>
                 <div class="col-md-3">
                     +<input type="number"
-						   placeholder=0
-						   value="{{ variables.deceive is defined and variables.deceive is not empty ? variables.deceive : 0 }}"
-						   name="deceive"
+                            placeholder=0
+                            value="{{ variables.deceive is defined and variables.deceive is not empty ? variables.deceive : 0 }}"
+                            name="deceive"
                             min=0
                             max=9
-						   >
+                >
                 </div>
                 <div class="col-md-3 font-weight-bold">
-                    Resources
+                    Rapport
                 </div>
                 <div class="col-md-3">
                     +<input type="number"
-						   placeholder=0
-						   value="{{ variables.resources is defined and variables.resources is not empty ? variables.resources : 0 }}"
-						   name="resources"
+                            placeholder=0
+                            value="{{ variables.rapport is defined and variables.rapport is not empty ? variables.rapport : 0 }}"
+                            name="rapport"
                             min=0
                             max=9
-						   >
+                >
                 </div>
             </div>
             <div class="row">
@@ -243,24 +243,24 @@
                 </div>
                 <div class="col-md-3">
                     +<input type="number"
-						   placeholder=0
-						   value="{{ variables.drive is defined and variables.drive is not empty ? variables.drive : 0 }}"
-						   name="drive"
+                            placeholder=0
+                            value="{{ variables.drive is defined and variables.drive is not empty ? variables.drive : 0 }}"
+                            name="drive"
                             min=0
                             max=9
-						   >
+                >
                 </div>
                 <div class="col-md-3 font-weight-bold">
-                    Shoot
+                    Resources
                 </div>
                 <div class="col-md-3">
                     +<input type="number"
-						   placeholder=0
-						   value="{{ variables.shoot is defined and variables.shoot is not empty ? variables.shoot : 0 }}"
-						   name="shoot"
+                            placeholder=0
+                            value="{{ variables.resources is defined and variables.resources is not empty ? variables.resources : 0 }}"
+                            name="resources"
                             min=0
                             max=9
-						   >
+                >
                 </div>
             </div>
             <div class="row">
@@ -269,24 +269,24 @@
                 </div>
                 <div class="col-md-3">
                     +<input type="number"
-						   placeholder=0
-						   value="{{ variables.empathy is defined and variables.empathy is not empty ? variables.empathy : 0 }}"
-						   name="empathy"
+                            placeholder=0
+                            value="{{ variables.empathy is defined and variables.empathy is not empty ? variables.empathy : 0 }}"
+                            name="empathy"
                             min=0
                             max=9
-						   >
+                >
                 </div>
                 <div class="col-md-3 font-weight-bold">
-                    Stealth
+                    Shoot
                 </div>
                 <div class="col-md-3">
                     +<input type="number"
-						   placeholder=0
-						   value="{{ variables.stealth is defined and variables.stealth is not empty ? variables.stealth : 0 }}"
-						   name="stealth"
+                            placeholder=0
+                            value="{{ variables.shoot is defined and variables.shoot is not empty ? variables.shoot : 0 }}"
+                            name="shoot"
                             min=0
                             max=9
-						   >
+                >
                 </div>
             </div>
             <div class="row">
@@ -295,24 +295,50 @@
                 </div>
                 <div class="col-md-3">
                     +<input type="number"
-						   placeholder=0
-						   value="{{ variables.fight is defined and variables.fight is not empty ? variables.fight : 0 }}"
-						   name="fight"
+                            placeholder=0
+                            value="{{ variables.fight is defined and variables.fight is not empty ? variables.fight : 0 }}"
+                            name="fight"
                             min=0
                             max=9
-						   >
+                >
+                </div>
+                <div class="col-md-3 font-weight-bold">
+                    Stealth
+                </div>
+                <div class="col-md-3">
+                    +<input type="number"
+                            placeholder=0
+                            value="{{ variables.stealth is defined and variables.stealth is not empty ? variables.stealth : 0 }}"
+                            name="stealth"
+                            min=0
+                            max=9
+                >
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 font-weight-bold">
+                    Investigate
+                </div>
+                <div class="col-md-3">
+                    +<input type="number"
+                            placeholder=0
+                            value="{{ variables.investigate is defined and variables.investigate is not empty ? variables.investigate : 0 }}"
+                            name="investigate"
+                            min=0
+                            max=9
+                >
                 </div>
                 <div class="col-md-3 font-weight-bold">
                     Will
                 </div>
                 <div class="col-md-3">
                     +<input type="number"
-						   placeholder=0
-						   value="{{ variables.will is defined and variables.will is not empty ? variables.will : 0 }}"
-						   name="will"
+                            placeholder=0
+                            value="{{ variables.will is defined and variables.will is not empty ? variables.will : 0 }}"
+                            name="will"
                             min=0
                             max=9
-						   >
+                >
                 </div>
             </div>
         </div>
@@ -338,11 +364,11 @@
         </div>
         <div class="col-md border border-dark mb-2 pt-1 slightly-bigger-font">
             <textarea
-                     class="form-control mention"
-                     id="extras"
-                     name="extras"
-                     rows="5"
-                     placeholder="Enter your extras here ...">
+                    class="form-control mention"
+                    id="extras"
+                    name="extras"
+                    rows="5"
+                    placeholder="Enter your extras here ...">
                  {{ variables.extras is defined ? variables.extras }}</textarea>
         </div>
     </div>
@@ -362,14 +388,14 @@
                 </div>
                 {% if variables.physical_stress_boxes is defined and variables.max_physical_stress_boxes is defined %}
                 <div class="col-md">
-                    <input  value="{{ variables.physical_stress_boxes is defined ? variables.physical_stress_boxes }}"
-                            class="m-0 p-0"
-                            id="physical_stress_boxes"
-                            name="physical_stress_boxes"
-                            placeholder="0"
-                            type="number"
-                            min=0
-                            max="{{ variables.max_physical_stress_boxes is defined ? variables.max_physical_stress_boxes : 2 }}"
+                    <input value="{{ variables.physical_stress_boxes is defined ? variables.physical_stress_boxes }}"
+                           class="m-0 p-0"
+                           id="physical_stress_boxes"
+                           name="physical_stress_boxes"
+                           placeholder="0"
+                           type="number"
+                           min=0
+                           max="{{ variables.max_physical_stress_boxes is defined ? variables.max_physical_stress_boxes : 2 }}"
                     >
                     /
                     {{ variables.max_physical_stress_boxes is not empty ? variables.max_physical_stress_boxes : 2}}
@@ -382,14 +408,14 @@
                 </div>
                 {% if variables.mental_stress_boxes is defined and variables.max_mental_stress_boxes is defined %}
                 <div class="col-md">
-                    <input  value="{{ variables.mental_stress_boxes is defined ? variables.mental_stress_boxes }}"
-                            class="m-0 p-0"
-                            id="mental_stress_boxes"
-                            name="mental_stress_boxes"
-                            placeholder="0"
-                            type="number"
-                            min=0
-                            max="{{ variables.max_mental_stress_boxes is defined ? variables.max_mental_stress_boxes : 2 }}"
+                    <input value="{{ variables.mental_stress_boxes is defined ? variables.mental_stress_boxes }}"
+                           class="m-0 p-0"
+                           id="mental_stress_boxes"
+                           name="mental_stress_boxes"
+                           placeholder="0"
+                           type="number"
+                           min=0
+                           max="{{ variables.max_mental_stress_boxes is defined ? variables.max_mental_stress_boxes : 2 }}"
                     >
                     /
                     {{ variables.max_mental_stress_boxes is not empty ? variables.max_mental_stress_boxes : 2 }}
@@ -405,10 +431,10 @@
                 <div class="col-md">
                     <input type="text"
                            class="form-control m-0 p-0" id="mild_consequence"
-						   placeholder="..."
-						   value="{{ variables.mild_consequence is defined and variables.mild_consequence is not empty ? variables.mild_consequence : '...' }}"
-						   name="mild_consequence"
-						   >
+                           placeholder="..."
+                           value="{{ variables.mild_consequence is defined and variables.mild_consequence is not empty ? variables.mild_consequence : '...' }}"
+                           name="mild_consequence"
+                    >
                 </div>
             </div>
             {% if variables.mild_consequence_extra_active is defined and variables.mild_consequence_extra_active == 1 %}
@@ -419,10 +445,10 @@
                 <div class="col-md">
                     <input type="text"
                            class="form-control m-0 p-0" id="mild_consequence_extra"
-						   placeholder="..."
-						   value="{{ variables.mild_consequence_extra is defined and variables.mild_consequence_extra is not empty ? variables.mild_consequence_extra : '...' }}"
-						   name="mild_consequence_extra"
-						   >
+                           placeholder="..."
+                           value="{{ variables.mild_consequence_extra is defined and variables.mild_consequence_extra is not empty ? variables.mild_consequence_extra : '...' }}"
+                           name="mild_consequence_extra"
+                    >
                 </div>
             </div>
             {% endif %}
@@ -433,10 +459,10 @@
                 <div class="col-md">
                     <input type="text"
                            class="form-control m-0 p-0" id="moderate_consequence"
-						   placeholder="..."
-						   value="{{ variables.moderate_consequence is defined and variables.moderate_consequence is not empty ? variables.moderate_consequence : '...' }}"
-						   name="moderate_consequence"
-						   >
+                           placeholder="..."
+                           value="{{ variables.moderate_consequence is defined and variables.moderate_consequence is not empty ? variables.moderate_consequence : '...' }}"
+                           name="moderate_consequence"
+                    >
                 </div>
             </div>
             <div class="row">
@@ -446,10 +472,10 @@
                 <div class="col-md">
                     <input type="text"
                            class="form-control m-0 p-0" id="severe_consequence"
-						   placeholder="..."
-						   value="{{ variables.severe_consequence is defined and variables.severe_consequence is not empty ? variables.severe_consequence : '...' }}"
-						   name="severe_consequence"
-						   >
+                           placeholder="..."
+                           value="{{ variables.severe_consequence is defined and variables.severe_consequence is not empty ? variables.severe_consequence : '...' }}"
+                           name="severe_consequence"
+                    >
                 </div>
             </div>
         </div>
