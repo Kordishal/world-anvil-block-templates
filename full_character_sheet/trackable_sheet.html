@@ -1,11 +1,11 @@
-<div>
+<div class="white-background">
     <div class="row mb-2">
         <div class="col-md-5 sl-name-field">
             {{ variables.name }}
         </div>
         <div class="col-md-2 mr-2">
             <div class="row">
-                <div class="col-md bg-dark text-white font-weight-bold border border-dark text-center large-font">
+                <div class="col-md dark-header-center">
                     Refresh
                 </div>
             </div>
@@ -17,7 +17,7 @@
         </div>
         <div class="col-md-2">
             <div class="row">
-                <div class="col-md bg-dark text-white font-weight-bold text-center border border-dark large-font">FP
+                <div class="col-md dark-header-center">FP
                 </div>
             </div>
             <div class="row">
@@ -34,10 +34,10 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-md-6 border mr-1 mb-1 large-font bg-dark text-white font-weight-bold border border-dark">
+        <div class="col-md-6 border mr-1 mb-1 dark-header">
             Aspects
         </div>
-        <div class="col-md border mb-1 large-font bg-dark text-white font-weight-bold border border-dark">
+        <div class="col-md border mb-1 dark-header">
             Skills
         </div>
     </div>
@@ -344,39 +344,26 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-md-6 border mr-1 mb-1 large-font bg-dark text-white font-weight-bold border border-dark">
+        <div class="col-md-6 border mr-1 mb-1 dark-header">
             Stunts
         </div>
-        <div class="col-md border mb-1 large-font bg-dark text-white font-weight-bold border border-dark">
+        <div class="col-md border mb-1 dark-header">
             Extras
         </div>
     </div>
     <div class="row">
-        <div class="col-md-6 border border-dark mr-1 mb-2 pt-1 slightly-bigger-font">
-             <textarea
-                     class="form-control mention"
-                     id="stunts"
-                     name="stunts"
-                     rows="5"
-                     placeholder="Enter your stunts here ...">
-                 {{ variables.stunts is defined ? variables.stunts }}</textarea>
-
+        <div class="col-md-6 border border-dark mr-1 mb-2 pt-1">
+            {{ variables.stunts is defined ? variables.stunts }}
         </div>
-        <div class="col-md border border-dark mb-2 pt-1 slightly-bigger-font">
-            <textarea
-                    class="form-control mention"
-                    id="extras"
-                    name="extras"
-                    rows="5"
-                    placeholder="Enter your extras here ...">
-                 {{ variables.extras is defined ? variables.extras }}</textarea>
+        <div class="col-md border border-dark mb-2 pt-1">
+            {{ variables.extras is defined ? variables.extras }}
         </div>
     </div>
     <div class="row">
-        <div class="col-md-6 border mb-1 large-font bg-dark text-white font-weight-bold border border-dark mr-1">
+        <div class="col-md-6 border mb-1 mr-1 dark-header">
             Stress
         </div>
-        <div class="col-md border mb-1 large-font bg-dark text-white font-weight-bold border border-dark">
+        <div class="col-md border mb-1 dark-header">
             Consequences
         </div>
     </div>
@@ -432,7 +419,7 @@
                     <input type="text"
                            class="form-control m-0 p-0" id="mild_consequence"
                            placeholder="..."
-                           value="{{ variables.mild_consequence is defined and variables.mild_consequence is not empty ? variables.mild_consequence : '...' }}"
+                           value="{{ variables.mild_consequence is defined and variables.mild_consequence is not empty ? variables.mild_consequence : '' }}"
                            name="mild_consequence"
                     >
                 </div>
@@ -446,7 +433,7 @@
                     <input type="text"
                            class="form-control m-0 p-0" id="mild_consequence_extra"
                            placeholder="..."
-                           value="{{ variables.mild_consequence_extra is defined and variables.mild_consequence_extra is not empty ? variables.mild_consequence_extra : '...' }}"
+                           value="{{ variables.mild_consequence_extra is defined and variables.mild_consequence_extra is not empty ? variables.mild_consequence_extra : '' }}"
                            name="mild_consequence_extra"
                     >
                 </div>
@@ -460,7 +447,7 @@
                     <input type="text"
                            class="form-control m-0 p-0" id="moderate_consequence"
                            placeholder="..."
-                           value="{{ variables.moderate_consequence is defined and variables.moderate_consequence is not empty ? variables.moderate_consequence : '...' }}"
+                           value="{{ variables.moderate_consequence is defined and variables.moderate_consequence is not empty ? variables.moderate_consequence : '' }}"
                            name="moderate_consequence"
                     >
                 </div>
@@ -473,7 +460,7 @@
                     <input type="text"
                            class="form-control m-0 p-0" id="severe_consequence"
                            placeholder="..."
-                           value="{{ variables.severe_consequence is defined and variables.severe_consequence is not empty ? variables.severe_consequence : '...' }}"
+                           value="{{ variables.severe_consequence is defined and variables.severe_consequence is not empty ? variables.severe_consequence : '' }}"
                            name="severe_consequence"
                     >
                 </div>
