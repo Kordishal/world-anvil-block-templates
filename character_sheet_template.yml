@@ -1,0 +1,106 @@
+fields:
+  high_concept:
+    input: string
+    label: "High Concept"
+    description: "What is this character all about?"
+  trouble:
+    input: string
+    label: "Trouble"
+    description: "What kind of trouble did your character get into?"
+  character_aspect_1:
+    input: string
+    label: "Character Aspect"
+    description: "An aspect about a past adventure."
+  character_aspect_2:
+    input: string
+    label: "Character Aspect"
+    description: "An aspect about one of your fellow party members."
+  character_aspect_3:
+    input: string
+    label: "Character Aspect"
+    description: "An aspect about another of your fellow party members."
+  refresh: 
+    input: integer
+    label: "Refresh"
+    min: 1
+    max: 3
+  athletics: 
+    input: integer
+    label: "Athletics"
+    min: 0
+    max: 5
+  burglary: 
+    input: integer
+    label: "Burglary"
+    min: 0
+    max: 5
+  contacts: 
+    input: integer
+    label: "Contacts"
+    min: 0
+    max: 5
+  crafts: 
+    input: integer
+    label: "Crafts"
+    min: 0
+    max: 5
+  deceive: 
+    input: integer
+    label: "Deceive"
+    min: 0
+    max: 5
+  drive: 
+    input: integer
+    label: "Drive"
+    min: 0
+    max: 5
+  empathy: 
+    input: integer
+    label: "Empathy"
+    min: 0
+    max: 5
+  fight: 
+    input: integer
+    label: "Fight"
+    min: 0
+    max: 5
+  investigate: 
+    input: integer
+    label: "Investigate"
+    min: 0
+    max: 5
+  notice: 
+    input: integer
+    label: "Notice"
+    min: 0
+    max: 5
+  physique: 
+    input: integer
+    label: "Physique"
+    min: 0
+    max: 5
+  rapport: 
+    input: integer
+    label: "Rapport"
+    min: 0
+    max: 5
+  resources: 
+    input: integer
+    label: "Resources"
+    min: 0
+    max: 5
+  shoot: 
+    input: integer
+    label: "Shoot"
+    min: 0
+    max: 5
+  stealth: 
+    input: integer
+    label: "Stealth"
+    min: 0
+    max: 5
+  will: 
+    input: integer
+    label: "Will"
+    min: 0
+    max: 5

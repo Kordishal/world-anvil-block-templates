@@ -1,0 +1,145 @@
+fields:
+  high_concept:
+    input: string
+    label: "High Concept"
+    description: "What is this character all about?"
+  trouble:
+    input: string
+    label: "Trouble"
+    description: "What kind of trouble did your character get into?"
+  character_aspect_1:
+    input: string
+    label: "Character Aspect 1"
+    description: "An aspect about a past adventure."
+  character_aspect_2:
+    input: string
+    label: "Character Aspect 2"
+    description: "An aspect about one of your fellow party members."
+  character_aspect_3:
+    input: string
+    label: "Character Aspect 3"
+    description: "An aspect about another of your fellow party members."
+  refresh:
+    input: integer
+    label: "Refresh"
+  fate_points:
+    input: integer
+    label: "Fate Points"
+  athletics:
+    input: integer
+    label: "Athletics"
+    min: 0
+    max: 5
+  burglary:
+    input: integer
+    label: "Burglary"
+    min: 0
+    max: 5
+  contacts:
+    input: integer
+    label: "Contacts"
+    min: 0
+    max: 5
+  crafts:
+    input: integer
+    label: "Crafts"
+    min: 0
+    max: 5
+  deceive:
+    input: integer
+    label: "Deceive"
+    min: 0
+    max: 5
+  drive:
+    input: integer
+    label: "Drive"
+    min: 0
+    max: 5
+  empathy:
+    input: integer
+    label: "Empathy"
+    min: 0
+    max: 5
+  fight:
+    input: integer
+    label: "Fight"
+    min: 0
+    max: 5
+  investigate:
+    input: integer
+    label: "Investigate"
+    min: 0
+    max: 5
+  notice:
+    input: integer
+    label: "Notice"
+    min: 0
+    max: 5
+  physique:
+    input: integer
+    label: "Physique"
+    min: 0
+    max: 5
+  rapport:
+    input: integer
+    label: "Rapport"
+    min: 0
+    max: 5
+  resources:
+    input: integer
+    label: "Resources"
+    min: 0
+    max: 5
+  shoot:
+    input: integer
+    label: "Shoot"
+    min: 0
+    max: 5
+  stealth:
+    input: integer
+    label: "Stealth"
+    min: 0
+    max: 5
+  will:
+    input: integer
+    label: "Will"
+    min: 0
+    max: 5
+  physical_stress_boxes_tracker:
+    input: integer
+    label: "Physical Stress Boxes"
+  max_physical_stress_boxes:
+    input: integer
+    label: "Max Physical Stress Boxes"
+  mental_stress_boxes_tracker:
+    input: integer
+    label: "Mental Stress Boxes"
+  max_mental_stress_boxes:
+    input: integer
+    label: "Max Mental Stress Boxes"
+  mild_consequence_1:
+    input: string
+    label: "Mild Consequence"
+  mild_consequence_2:
+    input: string
+    label: "Mild Consequence (Extra)"
+  mild_consequence_slot_2_active:
+    input: integer
+    label: "Mild Consequence (Extra) Active"
+    description: "Set this value to 1 to activate the extra mild consequence slot!"
+    min: 0
+    max: 1
+  moderate_consequence:
+    input: string
+    label: "Moderate Consequence"
+  severe_consequence:
+    input: string
+    label: "Severe Consequence"
+  stunts:
+    input: text
+    label: "Stunts"
+  extras:
+    input: text
+    label: "Extras"
+
+
