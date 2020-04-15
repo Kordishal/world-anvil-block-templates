@@ -396,7 +396,7 @@
     </div>
     <div class="row">
         <div class="col-md-6 border border-dark mr-1 bigger-font">
-            <div class="row">
+            <div class="row pt-2">
                 <div class="col-md pl-2 font-weight-bold">
                     Physical Stress
                 </div>
@@ -423,7 +423,7 @@
                     >
                 </div>
             </div>
-            <div class="row">
+            <div class="row pt-2">
                 <div class="col-md pl-2 font-weight-bold">
                     Mental Stress
                 </div>
@@ -452,69 +452,63 @@
             </div>
         </div>
         <div class="col-md border border-dark bigger-font pr-0">
-            <div class="row">
-                <div class="col-md font-weight-bold">
+            <div class="row pt-2">
+                <div class="col-md-4 font-weight-bold">
                     Mild Consequence
                 </div>
                 <div class="col-md">
                     <input type="text"
-                           class="form-control m-0 p-0" id="mild_consequence"
+                           class="form-control m-0 pl-2" id="mild_consequence"
 						   placeholder="..."
 						   value="{{ variables.mild_consequence }}"
 						   name="mild_consequence"
 						   >
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md font-weight-bold">
-                    Mild Consequence (Extra) is Active? 0=no 1=yes
-                </div>
-                <div class="col-md">
-                    <input  value="{{ variables.mild_consequence_extra_active }}"
-                            class="m-0 p-0"
-                            required="required"
-                            id="mild_consequence_extra_active"
-                            name="mild_consequence_extra_active"
-                            placeholder=0
-                            type="number"
-                            min=0
-                            max=1
-                    >
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md font-weight-bold">
+            <div class="row pt-2">
+                <div class="col-md-3 font-weight-bold">
                     Mild Consequence (Extra)
+                </div>
+                <div class="col-md-1">
+                    <input
+                        value="1" {% if variables.mild_consequence_extra_active is defined and variables.mild_consequence_extra_active == 1   %}
+                        checked="checked"{% endif %}
+                        class="form-control"
+                        id="mild_consequence_extra_active"
+                        name="mild_consequence_extra_active"
+                        placeholder=""
+                        type="checkbox">
+
                 </div>
                 <div class="col-md">
                     <input type="text"
-                           class="form-control m-0 p-0" id="mild_consequence_extra"
+                           class="form-control m-0 pl-2" id="mild_consequence_extra"
 						   placeholder="..."
 						   value="{{ variables.mild_consequence_extra }}"
 						   name="mild_consequence_extra"
 						   >
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md font-weight-bold">
+            <div class="row pt-2">
+                <div class="col-md-4 font-weight-bold">
                     Moderate Consequence
                 </div>
                 <div class="col-md">
                     <input type="text"
-                           class="form-control m-0 p-0" id="moderate_consequence"
+                           class="form-control m-0 pl-2" id="moderate_consequence"
 						   placeholder="..."
 						   value="{{ variables.moderate_consequence }}"
 						   name="moderate_consequence"
 						   >
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md font-weight-bold">
+            <div class="row pt-2 pb-2">
+                <div class="col-md-4 font-weight-bold">
                     Severe Consequence
                 </div>
                 <div class="col-md">
                     <input type="text"
-                           class="form-control m-0 p-0" id="severe_consequence"
+                           class="form-control m-0 pl-2" id="severe_consequence"
 						   placeholder="..."
 						   value="{{ variables.severe_consequence }}"
 						   name="severe_consequence"
