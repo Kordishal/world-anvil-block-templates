@@ -1,10 +1,14 @@
-<section>
+<section class="white-background">
+	<div class="row">
+		<div class="col">
+			 <label for="stress" class="control-label">Physical & Mental Stress</label>
+		</div>
+	</div>
 	<div class="row">
 		 <div class="col">
-			 <span>
-				 <label for="stress" class="control-label">Stress</label>
-                    <input hidden="hidden" value="0" id="stress" name="stress" type="checkbox" /><input value="1" {% if variables.stress is defined and variables.stress == 1  %} checked="checked"{% endif %} id="stress" name="stress" type="checkbox" />
-                </span>
+			 <input value="0" id="stress" name="stress" type="hidden" />
+			 <input title="Two Shift Stress Box" value="1" {% if variables.stress is defined and variables.stress == 1  %} checked="checked"{% endif %}
+					id="stress" name="stress" type="checkbox" />
 		 </div>
 	</div>
 </section>

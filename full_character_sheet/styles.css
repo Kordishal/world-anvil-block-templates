@@ -40,3 +40,22 @@
 .slightly-bigger-font {
     font-size: 1.05rem !important;
 }
+
+input[type=checkbox] + label {
+    cursor: pointer;
+    width: 73px;
+    height: 62px;
+    display: inline-block;
+    background: url('https://www.worldanvil.com/uploads/images/c32fca8d4d610ebf95fbaa929f8f03a9.png') no-repeat 0 0;
+}
+
+input[type=checkbox]:checked + label {
+    background-position: 0 -62px;
+}
+
+input[type=checkbox] {
+    width: 28px;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+}

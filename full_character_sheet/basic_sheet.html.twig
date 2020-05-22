@@ -43,7 +43,7 @@
                     High Concept
                 </div>
                 <div class="col-md border-bottom">
-                    {% if variables.high_concept is defined %} {{ variables.high_concept}} {% endif %}
+                    {% if variables.high_concept is defined %} {{ variables.high_concept }} {% endif %}
                 </div>
             </div>
             <div class="row">
@@ -51,28 +51,28 @@
                     Trouble
                 </div>
                 <div class="col-md border-bottom">
-                    {% if variables.trouble is defined %} {{ variables.trouble}} {% endif %}
+                    {% if variables.trouble is defined %} {{ variables.trouble }} {% endif %}
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-3 border-bottom border-right">
                 </div>
                 <div class="col-md border-bottom">
-                    {% if variables.character_aspect_1 is defined %} {{ variables.character_aspect_1}} {% endif %}
+                    {% if variables.character_aspect_1 is defined %} {{ variables.character_aspect_1 }} {% endif %}
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-3 border-bottom border-right">
                 </div>
                 <div class="col-md border-bottom">
-                    {% if variables.character_aspect_2 is defined %} {{ variables.character_aspect_2}} {% endif %}
+                    {% if variables.character_aspect_2 is defined %} {{ variables.character_aspect_2 }} {% endif %}
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-3 border-bottom border-right">
                 </div>
                 <div class="col-md border-bottom">
-                    {% if variables.character_aspect_3 is defined %} {{ variables.character_aspect_3}} {% endif %}
+                    {% if variables.character_aspect_3 is defined %} {{ variables.character_aspect_3 }} {% endif %}
                 </div>
             </div>
         </div>
@@ -83,14 +83,16 @@
                 </div>
                 <div class="col-md-4">
                     +{{ variables.athletics is defined and variables.athletics is not empty and variables.athletics > 0
-                    ? variables.athletics : 0 }} [roll:4dF+{{ variables.athletics is defined ? variables.athletics : 0}}]
+                    ? variables.athletics : 0 }}
+                    [roll:4dF+{{ variables.athletics is defined ? variables.athletics : 0 }}]
                 </div>
                 <div class="col-md-2 font-weight-bold">
                     Lore
                 </div>
                 <div class="col-md-4">
                     +{{ variables.lore is defined and variables.lore is not empty and
-                    variables.lore > 0 ? variables.lore : 0 }} [roll:4dF+{{ variables.lore is defined ? variables.lore : 0}}]
+                    variables.lore > 0 ? variables.lore : 0 }}
+                    [roll:4dF+{{ variables.lore is defined ? variables.lore : 0 }}]
                 </div>
             </div>
             <div class="row">
@@ -99,14 +101,15 @@
                 </div>
                 <div class="col-md-4">
                     +{{ variables.burglary is defined and variables.burglary is not empty and variables.burglary > 0
-                    ? variables.burglary : 0 }} [roll:4dF+{{ variables.burglary is defined ? variables.burglary : 0}}]
+                    ? variables.burglary : 0 }} [roll:4dF+{{ variables.burglary is defined ? variables.burglary : 0 }}]
                 </div>
                 <div class="col-md-2 font-weight-bold">
                     Notice
                 </div>
                 <div class="col-md-4">
                     +{{ variables.notice is defined and variables.notice is not empty and
-                    variables.notice > 0 ? variables.notice : 0 }} [roll:4dF+{{ variables.notice is defined ? variables.notice : 0}}]
+                    variables.notice > 0 ? variables.notice : 0 }}
+                    [roll:4dF+{{ variables.notice is defined ? variables.notice : 0 }}]
                 </div>
             </div>
             <div class="row">
@@ -115,14 +118,15 @@
                 </div>
                 <div class="col-md-4">
                     +{{ variables.contacts is defined and variables.contacts is not empty and variables.contacts > 0
-                    ? variables.contacts : 0 }} [roll:4dF+{{ variables.contacts is defined ? variables.contacts : 0}}]
+                    ? variables.contacts : 0 }} [roll:4dF+{{ variables.contacts is defined ? variables.contacts : 0 }}]
                 </div>
                 <div class="col-md-2 font-weight-bold">
                     Physique
                 </div>
                 <div class="col-md-4">
                     +{{ variables.physique is defined and variables.physique is not empty and
-                    variables.physique > 0 ? variables.physique : 0 }} [roll:4dF+{{ variables.physique is defined ? variables.physique : 0}}]
+                    variables.physique > 0 ? variables.physique : 0 }}
+                    [roll:4dF+{{ variables.physique is defined ? variables.physique : 0 }}]
                 </div>
             </div>
             <div class="row">
@@ -131,14 +135,15 @@
                 </div>
                 <div class="col-md-4">
                     +{{ variables.crafts is defined and variables.crafts is not empty and variables.crafts > 0
-                    ? variables.crafts : 0 }} [roll:4dF+{{ variables.crafts is defined ? variables.crafts : 0}}]
+                    ? variables.crafts : 0 }} [roll:4dF+{{ variables.crafts is defined ? variables.crafts : 0 }}]
                 </div>
                 <div class="col-md-2 font-weight-bold">
                     Provoke
                 </div>
                 <div class="col-md-4">
                     +{{ variables.provoke is defined and variables.provoke is not empty and
-                    variables.provoke > 0 ? variables.provoke : 0 }} [roll:4dF+{{ variables.provoke is defined ? variables.provoke : 0}}]
+                    variables.provoke > 0 ? variables.provoke : 0 }}
+                    [roll:4dF+{{ variables.provoke is defined ? variables.provoke : 0 }}]
                 </div>
             </div>
             <div class="row">
@@ -147,14 +152,15 @@
                 </div>
                 <div class="col-md-4">
                     +{{ variables.deceive is defined and variables.deceive is not empty and variables.deceive > 0
-                    ? variables.deceive : 0 }} [roll:4dF+{{ variables.deceive is defined ? variables.deceive : 0}}]
+                    ? variables.deceive : 0 }} [roll:4dF+{{ variables.deceive is defined ? variables.deceive : 0 }}]
                 </div>
                 <div class="col-md-2 font-weight-bold">
                     Rapport
                 </div>
                 <div class="col-md-4">
                     +{{ variables.rapport is defined and variables.rapport is not empty and
-                    variables.rapport > 0 ? variables.rapport : 0 }} [roll:4dF+{{ variables.rapport is defined ? variables.rapport : 0}}]
+                    variables.rapport > 0 ? variables.rapport : 0 }}
+                    [roll:4dF+{{ variables.rapport is defined ? variables.rapport : 0 }}]
                 </div>
             </div>
             <div class="row">
@@ -163,14 +169,15 @@
                 </div>
                 <div class="col-md-4">
                     +{{ variables.drive is defined and variables.drive is not empty and variables.drive > 0
-                    ? variables.drive : 0 }} [roll:4dF+{{ variables.drive is defined ? variables.drive : 0}}]
+                    ? variables.drive : 0 }} [roll:4dF+{{ variables.drive is defined ? variables.drive : 0 }}]
                 </div>
                 <div class="col-md-2 font-weight-bold">
                     Resources
                 </div>
                 <div class="col-md-4">
                     +{{ variables.resources is defined and variables.resources is not empty and
-                    variables.resources > 0 ? variables.resources : 0 }} [roll:4dF+{{ variables.resources is defined ? variables.resources : 0}}]
+                    variables.resources > 0 ? variables.resources : 0 }}
+                    [roll:4dF+{{ variables.resources is defined ? variables.resources : 0 }}]
                 </div>
             </div>
             <div class="row">
@@ -179,14 +186,15 @@
                 </div>
                 <div class="col-md-4">
                     +{{ variables.empathy is defined and variables.empathy is not empty and variables.empathy > 0
-                    ? variables.empathy : 0 }} [roll:4dF+{{ variables.empathy is defined ? variables.empathy : 0}}]
+                    ? variables.empathy : 0 }} [roll:4dF+{{ variables.empathy is defined ? variables.empathy : 0 }}]
                 </div>
                 <div class="col-md-2 font-weight-bold">
                     Shoot
                 </div>
                 <div class="col-md-4">
                     +{{ variables.shoot is defined and variables.shoot is not empty and
-                    variables.shoot > 0 ? variables.shoot : 0 }} [roll:4dF+{{ variables.shoot is defined ? variables.shoot : 0}}]
+                    variables.shoot > 0 ? variables.shoot : 0 }}
+                    [roll:4dF+{{ variables.shoot is defined ? variables.shoot : 0 }}]
                 </div>
             </div>
             <div class="row">
@@ -195,14 +203,15 @@
                 </div>
                 <div class="col-md-4">
                     +{{ variables.fight is defined and variables.fight is not empty and variables.fight > 0
-                    ? variables.fight : 0 }} [roll:4dF+{{ variables.fight is defined ? variables.fight : 0}}]
+                    ? variables.fight : 0 }} [roll:4dF+{{ variables.fight is defined ? variables.fight : 0 }}]
                 </div>
                 <div class="col-md-2 font-weight-bold">
                     Stealth
                 </div>
                 <div class="col-md-4">
                     +{{ variables.stealth is defined and variables.stealth is not empty and
-                    variables.stealth > 0 ? variables.stealth : 0 }} [roll:4dF+{{ variables.stealth is defined ? variables.stealth : 0}}]
+                    variables.stealth > 0 ? variables.stealth : 0 }}
+                    [roll:4dF+{{ variables.stealth is defined ? variables.stealth : 0 }}]
                 </div>
             </div>
             <div class="row">
@@ -211,14 +220,16 @@
                 </div>
                 <div class="col-md-4">
                     +{{ variables.investigate is defined and variables.investigate is not empty and
-                    variables.investigate > 0 ? variables.investigate : 0 }} [roll:4dF+{{ variables.investigate is defined ? variables.investigate : 0}}]
+                    variables.investigate > 0 ? variables.investigate : 0 }}
+                    [roll:4dF+{{ variables.investigate is defined ? variables.investigate : 0 }}]
                 </div>
                 <div class="col-md-2 font-weight-bold">
                     Will
                 </div>
                 <div class="col-md-4">
                     +{{ variables.will is defined and variables.will is not empty and
-                    variables.will > 0 ? variables.will : 0 }} [roll:4dF+{{ variables.will is defined ? variables.will : 0}}]
+                    variables.will > 0 ? variables.will : 0 }}
+                    [roll:4dF+{{ variables.will is defined ? variables.will : 0 }}]
                 </div>
             </div>
         </div>
@@ -233,10 +244,10 @@
     </div>
     <div class="row">
         <div class="col-md-5 border border-dark mr-1 mb-2 pt-1 slightly-bigger-font">
-            {{ variables.stunts is defined and variables.stunts is not empty ? variables.stunts : ""}}
+            {{ variables.stunts is defined and variables.stunts is not empty ? variables.stunts : "" }}
         </div>
         <div class="col-md-6 border border-dark mb-2 pt-1 slightly-bigger-font">
-            {{ variables.extras is defined and variables.extras is not empty ? variables.extras : ""}}
+            {{ variables.extras is defined and variables.extras is not empty ? variables.extras : "" }}
         </div>
     </div>
     <div class="row">
@@ -252,25 +263,24 @@
             <div class="row">
                 <div class="col-md pl-2 font-weight-bold">
                     Physical Stress
+
+
                 </div>
-                {% if variables.physical_stress_boxes is defined and variables.max_physical_stress_boxes is defined %}
+
                 <div class="col-md">
-                    {{ variables.physical_stress_boxes is not empty ? variables.physical_stress_boxes : 2 }}
-                    /
-                    {{ variables.max_physical_stress_boxes is not empty ? variables.max_physical_stress_boxes : 2}}
+                    <input value="1" {% if variables.physical_stress_box_1 is defined and variables.physical_stress_box_1 == 1 %} checked="checked"{% endif %} id="physical_stress_box_1" name="physical_stress_box_1" type="checkbox" disabled/><label title="Phyiscal Stress (2-Shift)" id="input_box_label_1" for="physical_stress_box_1"></label>
                 </div>
-                {% endif %}
             </div>
             <div class="row">
                 <div class="col-md pl-2 font-weight-bold">
                     Mental Stress
                 </div>
                 {% if variables.mental_stress_boxes is defined and variables.max_mental_stress_boxes is defined %}
-                <div class="col-md">
-                    {{ variables.mental_stress_boxes is not empty ? variables.mental_stress_boxes : 2 }}
-                    /
-                    {{ variables.max_mental_stress_boxes is not empty ? variables.max_mental_stress_boxes : 2 }}
-                </div>
+                    <div class="col-md">
+                        {{ variables.mental_stress_boxes is not empty ? variables.mental_stress_boxes : 2 }}
+                        /
+                        {{ variables.max_mental_stress_boxes is not empty ? variables.max_mental_stress_boxes : 2 }}
+                    </div>
                 {% endif %}
             </div>
         </div>
@@ -280,25 +290,25 @@
                     Mild Consequence
                 </div>
                 <div class="col-md">
-                    {{ variables.mild_consequence is defined ? variables.mild_consequences : ""}}
+                    {{ variables.mild_consequence is defined ? variables.mild_consequences : "" }}
                 </div>
             </div>
             {% if variables.mild_consequence_extra_active is defined and variables.mild_consequence_extra_active == 1 %}
-            <div class="row">
-                <div class="col-md font-weight-bold">
-                    Mild Consequence (Extra)
+                <div class="row">
+                    <div class="col-md font-weight-bold">
+                        Mild Consequence (Extra)
+                    </div>
+                    <div class="col-md">
+                        {{ variables.mild_consequence_extra is defined ? variables.mild_consequence_extra : "" }}
+                    </div>
                 </div>
-                <div class="col-md">
-                    {{ variables.mild_consequence_extra is defined ? variables.mild_consequence_extra : ""}}
-                </div>
-            </div>
             {% endif %}
             <div class="row">
                 <div class="col-md font-weight-bold">
                     Moderate Consequence
                 </div>
                 <div class="col-md">
-                    {{ variables.moderate_consequence is defined ? variables.moderate_consequence : ""}}
+                    {{ variables.moderate_consequence is defined ? variables.moderate_consequence : "" }}
                 </div>
             </div>
             <div class="row">
@@ -306,7 +316,7 @@
                     Severe Consequence
                 </div>
                 <div class="col-md">
-                    {{ variables.severe_consequence is defined ? variables.severe_consequence : ""}}
+                    {{ variables.severe_consequence is defined ? variables.severe_consequence : "" }}
                 </div>
             </div>
         </div>

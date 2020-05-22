@@ -115,18 +115,30 @@ fields:
     label: "Will"
     min: 0
     max: 5
-  physical_stress_boxes_tracker:
-    input: integer
-    label: "Physical Stress Boxes"
-  max_physical_stress_boxes:
-    input: integer
-    label: "Max Physical Stress Boxes"
-  mental_stress_boxes_tracker:
-    input: integer
-    label: "Mental Stress Boxes"
-  max_mental_stress_boxes:
-    input: integer
-    label: "Max Mental Stress Boxes"
+  physical_stress_box_1:
+    input: checkbox
+    label: "Physical Stress Box 1"
+  physical_stress_box_2:
+    input: checkbox
+    label: "Physical Stress Box 2"
+  physical_stress_box_3:
+    input: checkbox
+    label: "Physical Stress Box 3"
+  physical_stress_box_4:
+    input: checkbox
+    label: "Physical Stress Box 4"
+  mental_stress_box_1:
+    input: checkbox
+    label: "Mental Stress Box 1"
+  mental_stress_box_2:
+    input: checkbox
+    label: "Mental Stress Box 2"
+  mental_stress_box_3:
+    input: checkbox
+    label: "Mental Stress Box 3"
+  mental_stress_box_4:
+    input: checkbox
+    label: "Mental Stress Box 4"
   mild_consequence_1:
     input: string
     label: "Mild Consequence"

@@ -401,26 +401,8 @@
                     Physical Stress
                 </div>
                 <div class="col-md">
-                    <input  value="{{ variables.physical_stress_boxes }}"
-                            class="m-0 p-0"
-                            id="physical_stress_boxes"
-                            name="physical_stress_boxes"
-                            placeholder="0"
-                            type="number"
-                            min=0
-                            max="{{ variables.max_physical_stress_boxes is defined ? variables.max_physical_stress_boxes : 2 }}"
-                    >
-                    /
-                    <input  value="{{ variables.max_physical_stress_boxes is defined ? variables.max_physical_stress_boxes : 2}}"
-                            class="m-0 p-0"
-                            required="required"
-                            id="max_physical_stress_boxes"
-                            name="max_physical_stress_boxes"
-                            placeholder=2
-                            type="number"
-                            min=2
-                            max=4
-                    >
+                    <label id="input_box_label_1"><input title="Two Shift Stress Box" value="1" {% if variables.physical_stress_box_1 is defined and variables.physical_stress_box_1 == 1  %} checked="checked"{% endif %}
+					id="physical_stress_box_1" name="physical_stress_box_1" type="checkbox" /></label>
                 </div>
             </div>
             <div class="row pt-2">
