@@ -46,7 +46,27 @@ input[type=checkbox] + label {
     width: 73px;
     height: 62px;
     display: inline-block;
-    background: url('https://www.worldanvil.com/uploads/images/c32fca8d4d610ebf95fbaa929f8f03a9.png') no-repeat 0 0;
+    background: url('https://www.worldanvil.com/uploads/images/f121c92aacc4c6e0c09b81e4868b99a9.png') no-repeat 0 0;
+}
+
+#input_box_label_1 {
+    background: url('https://www.worldanvil.com/uploads/images/f121c92aacc4c6e0c09b81e4868b99a9.png') no-repeat 0 0;
+}
+
+#input_box_label_2 {
+    background: url('https://www.worldanvil.com/uploads/images/0f0b870af2a34beb0f7cda5eabc22251.png') no-repeat 0 0;
+}
+
+#input_box_label_3 {
+    background: url('https://www.worldanvil.com/uploads/images/fe841ccb834a3e530364a06d9a7130fb.png') no-repeat 0 0;
+}
+
+#input_box_label_4 {
+    background: url('https://www.worldanvil.com/uploads/images/d18f5a87b23b28c08a66e3adbc473e25.png') no-repeat 0 0;
+}
+
+.checkbox-opacity {
+    opacity: 50%;
 }
 
 input[type=checkbox]:checked + label {

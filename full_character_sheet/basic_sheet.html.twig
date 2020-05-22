@@ -261,27 +261,58 @@
     <div class="row">
         <div class="col-md-5 border border-dark mr-1 bigger-font">
             <div class="row">
-                <div class="col-md pl-2 font-weight-bold">
-                    Physical Stress
-
-
-                </div>
-
                 <div class="col-md">
-                    <input value="1" {% if variables.physical_stress_box_1 is defined and variables.physical_stress_box_1 == 1 %} checked="checked"{% endif %} id="physical_stress_box_1" name="physical_stress_box_1" type="checkbox" disabled/><label title="Phyiscal Stress (2-Shift)" id="input_box_label_1" for="physical_stress_box_1"></label>
+                    <h3>Physical Stress</h3>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md pl-2 font-weight-bold">
-                    Mental Stress
+                <div class="col-md">
+                    <input value="1" {% if variables.physical_stress_box_1 is defined and variables.physical_stress_box_1 == 1 %} checked="checked"{% endif %}
+                           id="physical_stress_box_1" name="physical_stress_box_1" type="checkbox" disabled/><label
+                            title="Phyiscal Stress (1-Shift)" id="input_box_label_1"
+                            for="physical_stress_box_1"></label>
+                    <input value="1" {% if variables.physical_stress_box_2 is defined and variables.physical_stress_box_2 == 1 %} checked="checked"{% endif %}
+                           id="physical_stress_box_2" name="physical_stress_box_2" type="checkbox" disabled/><label
+                            title="Phyiscal Stress (2-Shift)" id="input_box_label_2"
+                            for="physical_stress_box_2"></label>
+                    <input value="1" {% if variables.physical_stress_box_3 is defined and variables.physical_stress_box_3 == 1 %} checked="checked"{% endif %}
+                           id="physical_stress_box_3" name="physical_stress_box_3" type="checkbox" disabled/><label
+                            {% if variables.physical_stress_box_3_is_active is defined and variables.physical_stress_box_3_is_active == 1 %} class="checkbox-opacity"{% endif %}
+                            title="Phyiscal Stress (3-Shift)" id="input_box_label_3"
+                            for="physical_stress_box_3"></label>
+                    <input value="1" {% if variables.physical_stress_box_4 is defined and variables.physical_stress_box_4 == 1 %} checked="checked"{% endif %}
+                           id="physical_stress_box_4" name="physical_stress_box_4" type="checkbox" disabled/><label
+                            {% if variables.physical_stress_box_4_is_active is defined and variables.physical_stress_box_4_is_active == 1 %} class="checkbox-opacity"{% endif %}
+                            title="Phyiscal Stress (4-Shift)" id="input_box_label_4"
+                            for="physical_stress_box_4"></label>
                 </div>
-                {% if variables.mental_stress_boxes is defined and variables.max_mental_stress_boxes is defined %}
-                    <div class="col-md">
-                        {{ variables.mental_stress_boxes is not empty ? variables.mental_stress_boxes : 2 }}
-                        /
-                        {{ variables.max_mental_stress_boxes is not empty ? variables.max_mental_stress_boxes : 2 }}
-                    </div>
-                {% endif %}
+            </div>
+            <div class="row">
+                <div class="col-md">
+                    <h3>Mental Stress</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md">
+                    <input value="1" {% if variables.mental_stress_box_1 is defined and variables.mental_stress_box_1 == 1 %} checked="checked"{% endif %}
+                           id="mental_stress_box_1" name="mental_stress_box_1" type="checkbox" disabled/><label
+                            title="Phyiscal Stress (1-Shift)" id="input_box_label_1"
+                            for="mental_stress_box_1"></label>
+                    <input value="1" {% if variables.mental_stress_box_2 is defined and variables.mental_stress_box_2 == 1 %} checked="checked"{% endif %}
+                           id="mental_stress_box_2" name="mental_stress_box_2" type="checkbox" disabled/><label
+                            title="Phyiscal Stress (2-Shift)" id="input_box_label_2"
+                            for="mental_stress_box_2"></label>
+                    <input value="1" {% if variables.mental_stress_box_3 is defined and variables.mental_stress_box_3 == 1 %} checked="checked"{% endif %}
+                           id="mental_stress_box_3" name="mental_stress_box_3" type="checkbox" disabled/><label
+                            {% if variables.mental_stress_box_3_is_active is defined and variables.mental_stress_box_3_is_active == 1 %} class="checkbox-opacity"{% endif %}
+                            title="Phyiscal Stress (3-Shift)" id="input_box_label_3"
+                            for="mental_stress_box_3"></label>
+                    <input value="1" {% if variables.mental_stress_box_4 is defined and variables.mental_stress_box_4 == 1 %} checked="checked"{% endif %}
+                           id="mental_stress_box_4" name="mental_stress_box_4" type="checkbox" disabled/><label
+                            {% if variables.mental_stress_box_4_is_active is defined and variables.mental_stress_box_4_is_active == 1 %} class="checkbox-opacity"{% endif %}
+                            title="Phyiscal Stress (4-Shift)" id="input_box_label_4"
+                            for="mental_stress_box_4"></label>
+                </div>
             </div>
         </div>
         <div class="col-md-6 border border-dark bigger-font">

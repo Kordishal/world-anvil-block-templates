@@ -124,9 +124,15 @@ fields:
   physical_stress_box_3:
     input: checkbox
     label: "Physical Stress Box 3"
+  physical_stress_box_3_is_active:
+    input: checkbox
+    label: "Physical Stress Box 3 is Active"
   physical_stress_box_4:
     input: checkbox
     label: "Physical Stress Box 4"
+  physical_stress_box_4_is_active:
+    input: checkbox
+    label: "Physical Stress Box 4 is Active"
   mental_stress_box_1:
     input: checkbox
     label: "Mental Stress Box 1"
