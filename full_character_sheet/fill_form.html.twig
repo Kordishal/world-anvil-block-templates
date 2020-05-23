@@ -1,17 +1,18 @@
 {% macro genSkillSelect(id, variables) %}
-    {% set skillList = ",Athletics,Burglary,Contacts,Crafts,Deceive,Drive,Empathy,Fight,Investigate,Lore,Notice,Physique,Provoke,Rapport,Resources,Shoot,Stealth,Will"|split(',')  %}
+    {% set skillList = ",Athletics,Burglary,Contacts,Crafts,Deceive,Drive,Empathy,Fight,Investigate,Lore,Notice,Physique,Provoke,Rapport,Resources,Shoot,Stealth,Will"|split(',') %}
     <select class="form-control" id={{ "skill_slot_"~id }} name={{ "skill_slot_"~id }}>
-    {% for skill in skillList %}
-        <option value="{{ skill }}" {% if attribute(variables, 'skill_slot_'~id) is defined and attribute(variables, 'skill_slot_'~id) == skill %}selected="selected" {% endif %}>
-            {{ skill }}</option>
-    {% endfor %}
+        {% for skill in skillList %}
+            <option value="{{ skill }}"
+                    {% if attribute(variables, 'skill_slot_'~id) is defined and attribute(variables, 'skill_slot_'~id) == skill %}selected="selected" {% endif %}>
+                {{ skill }}</option>
+        {% endfor %}
     </select>
 {% endmacro genSkillSelect %}
 {% macro genRow(base, variables) %}
     {% for i in range(base, base + 4) %}
-    <div class="col-md-2">
-        {{ _self.genSkillSelect(i, variables) }}
-    </div>
+        <div class="col-md-2">
+            {{ _self.genSkillSelect(i, variables) }}
+        </div>
     {% endfor %}
 {% endmacro genRow %}
 {% macro genSkillRow(name, modifier, base, variables) %}
@@ -32,6 +33,12 @@
                    value="{{ variables.name is defined ? variables.name : '' }}"
                    name="name"
             >
+        </div>
+        <div title="A short evocative description of your character.">
+            <label for="description">Character Description</label>
+            <textarea class="form-control mention" id="description" name="description" rows="3"
+                      placeholder="Enter character description ...">{{ variables.description is defined ? variables.description }}</textarea>
+
         </div>
     </div>
     <div class="col-md-2 mr-2">

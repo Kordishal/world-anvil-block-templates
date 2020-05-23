@@ -1,4 +1,7 @@
 fields:
+  description:
+    input: text
+    label: "Description"
   high_concept:
     input: string
     label: "High Concept"

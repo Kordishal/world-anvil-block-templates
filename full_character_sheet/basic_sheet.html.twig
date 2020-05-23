@@ -17,71 +17,44 @@
     </div>
 {% endmacro genSkillRow %}
 <section class="bg-white">
-    <div class="row mb-2">
-        <div class="col-md-5 sl-name-field">
-            {{ variables.name }}
-        </div>
-        <div class="col-md-2 mr-2">
-            <div class="row">
-                <div class="col-md bg-dark text-white font-weight-bold border border-dark text-center large-font">
-                    Refresh
+    <section> <!-- Header Section -->
+        <div class="row">
+            <div class="col">
+                <div class="row">
+                    <div class="col bg-dark">
+                        <h1>{{ variables.name }}</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col bg-white">
+                    {% if variables.description is defined %}
+                        <p>{{ variables.description }}</p>
+                    {% endif %}
+                    </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md text-center border border-dark large-font">
-                    {{ variables.refresh is defined and variables.refresh is not empty ? variables.refresh : 3 }}
-                </div>
-            </div>
-        </div>
-        <div class="logo">
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-5 border mr-1 mb-1 large-font bg-dark text-white font-weight-bold border border-dark">
-            Aspects
-        </div>
-    </div>
-    <div class="row mb-2">
-       <div class="col-md-5 border border-dark mr-1 bigger-font">
-            <div class="row">
-                <div class="col-md-3 font-weight-bold border-bottom border-right">
-                    High Concept
-                </div>
-                <div class="col-md border-bottom">
-                    {% if variables.high_concept is defined %} {{ variables.high_concept }} {% endif %}
+                <div class="col bg-dark">
+                    <h1>Refresh</h1>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-3 font-weight-bold border-bottom border-right">
-                    Trouble
-                </div>
-                <div class="col-md border-bottom">
-                    {% if variables.trouble is defined %} {{ variables.trouble }} {% endif %}
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3 border-bottom border-right">
-                </div>
-                <div class="col-md border-bottom">
-                    {% if variables.character_aspect_1 is defined %} {{ variables.character_aspect_1 }} {% endif %}
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3 border-bottom border-right">
-                </div>
-                <div class="col-md border-bottom">
-                    {% if variables.character_aspect_2 is defined %} {{ variables.character_aspect_2 }} {% endif %}
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3 border-bottom border-right">
-                </div>
-                <div class="col-md border-bottom">
-                    {% if variables.character_aspect_3 is defined %} {{ variables.character_aspect_3 }} {% endif %}
+                <div class="col bg-white">
+                    <p>{{ variables.refresh is defined ? variables.refresh : 3 }}</p>
                 </div>
             </div>
         </div>
-    </div>
+        <div>
+            <img class="img-responsive"
+                 src="https://www.worldanvil.com/uploads/images/fba60b4e66c7ff891242b2ccd9a6abcc.png">
+        </div>
+        </div>
+
+
+    </section> <!-- End Header Section -->
+    <section> <!-- Aspect Section -->
+
+    </section> <!-- End Aspect Seaction -->
     <section> <!-- Skills Section -->
         <div class="row">
             <div class="col-md-12 bg-dark text-white">
@@ -93,7 +66,7 @@
         {{ _self.genSkillRow("Good", 3, 10, variables) }}
         {{ _self.genSkillRow("Fair", 2, 15, variables) }}
         {{ _self.genSkillRow("Average", 1, 20, variables) }}
-    </section>
+    </section> <!-- End Skills Section -->
     <div class="row">
         <div class="col-md-5 border mr-1 mb-1 large-font bg-dark text-white font-weight-bold border border-dark">
             Stunts
