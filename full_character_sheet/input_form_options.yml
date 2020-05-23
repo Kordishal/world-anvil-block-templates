@@ -25,6 +25,81 @@ fields:
   fate_points:
     input: integer
     label: "Fate Points"
+  skill_slot_0:
+    input: string
+    label: "Skill Slot 0"
+  skill_slot_1:
+    input: string
+    label: "Skill Slot 1"
+  skill_slot_2:
+    input: string
+    label: "Skill Slot 2"
+  skill_slot_3:
+    input: string
+    label: "Skill Slot 3"
+  skill_slot_4:
+    input: string
+    label: "Skill Slot 4"
+  skill_slot_5:
+    input: string
+    label: "Skill Slot 5"
+  skill_slot_6:
+    input: string
+    label: "Skill Slot 6"
+  skill_slot_7:
+    input: string
+    label: "Skill Slot 7"
+  skill_slot_8:
+    input: string
+    label: "Skill Slot 8"
+  skill_slot_9:
+    input: string
+    label: "Skill Slot 9"
+  skill_slot_10:
+    input: string
+    label: "Skill Slot 10"
+  skill_slot_11:
+    input: string
+    label: "Skill Slot 11"
+  skill_slot_12:
+    input: string
+    label: "Skill Slot 12"
+  skill_slot_13:
+    input: string
+    label: "Skill Slot 13"
+  skill_slot_14:
+    input: string
+    label: "Skill Slot 14"
+  skill_slot_15:
+    input: string
+    label: "Skill Slot 15"
+  skill_slot_16:
+    input: string
+    label: "Skill Slot 16"
+  skill_slot_17:
+    input: string
+    label: "Skill Slot 17"
+  skill_slot_18:
+    input: string
+    label: "Skill Slot 18"
+  skill_slot_19:
+    input: string
+    label: "Skill Slot 19"
+  skill_slot_20:
+    input: string
+    label: "Skill Slot 20"
+  skill_slot_21:
+    input: string
+    label: "Skill Slot 21"
+  skill_slot_22:
+    input: string
+    label: "Skill Slot 22"
+  skill_slot_23:
+    input: string
+    label: "Skill Slot 23"
+  skill_slot_24:
+    input: string
+    label: "Skill Slot 24"
   physical_stress_box_1:
     input: checkbox
     label: "Physical Stress Box 1"

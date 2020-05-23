@@ -12,11 +12,14 @@ h1 {
     border-color: black !important;
 }
 
-.white-background {
+.bg-white {
+    border-radius: 2px;
+    border-color: gray;
     background-color: white !important;
 }
 
 .bg-dark {
+    border-radius: 2px;
     background-color: black !important;
 }
 

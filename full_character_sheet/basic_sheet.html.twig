@@ -1,4 +1,22 @@
-<div class="white-background">
+{% macro genSkillSelect(id, variables) %}
+    {{ attribute(variables, "skill_slot_"~id) }}
+{% endmacro genSkillSelect %}
+{% macro genRow(base, variables) %}
+    {% for i in range(base, base + 4) %}
+        <div class="col-md-2">
+            {{ _self.genSkillSelect(i, variables) }}
+        </div>
+    {% endfor %}
+{% endmacro genRow %}
+{% macro genSkillRow(name, modifier, base, variables) %}
+    <div class="row bg-white">
+        <div class="col-md-2">
+            <p>{{ name ~ " (+" ~ modifier ~ ")" }} [roll:4dF+{{ modifier }}]</p>
+        </div>
+        {{ _self.genRow(base, variables) }}
+    </div>
+{% endmacro genSkillRow %}
+<section class="bg-white">
     <div class="row mb-2">
         <div class="col-md-5 sl-name-field">
             {{ variables.name }}
@@ -22,12 +40,9 @@
         <div class="col-md-5 border mr-1 mb-1 large-font bg-dark text-white font-weight-bold border border-dark">
             Aspects
         </div>
-        <div class="col-md-6 border mb-1 large-font bg-dark text-white font-weight-bold border border-dark">
-            Skills
-        </div>
     </div>
     <div class="row mb-2">
-        <div class="col-md-5 border border-dark mr-1 bigger-font">
+       <div class="col-md-5 border border-dark mr-1 bigger-font">
             <div class="row">
                 <div class="col-md-3 font-weight-bold border-bottom border-right">
                     High Concept
@@ -66,164 +81,19 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-6 border border-dark slightly-bigger-font">
-            <div class="row">
-                <div class="col-md-2 font-weight-bold">
-                    Athletics
-                </div>
-                <div class="col-md-4">
-                    +{{ variables.athletics is defined and variables.athletics is not empty and variables.athletics > 0
-                    ? variables.athletics : 0 }}
-                    [roll:4dF+{{ variables.athletics is defined ? variables.athletics : 0 }}]
-                </div>
-                <div class="col-md-2 font-weight-bold">
-                    Lore
-                </div>
-                <div class="col-md-4">
-                    +{{ variables.lore is defined and variables.lore is not empty and
-                    variables.lore > 0 ? variables.lore : 0 }}
-                    [roll:4dF+{{ variables.lore is defined ? variables.lore : 0 }}]
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-2 font-weight-bold">
-                    Burglary
-                </div>
-                <div class="col-md-4">
-                    +{{ variables.burglary is defined and variables.burglary is not empty and variables.burglary > 0
-                    ? variables.burglary : 0 }} [roll:4dF+{{ variables.burglary is defined ? variables.burglary : 0 }}]
-                </div>
-                <div class="col-md-2 font-weight-bold">
-                    Notice
-                </div>
-                <div class="col-md-4">
-                    +{{ variables.notice is defined and variables.notice is not empty and
-                    variables.notice > 0 ? variables.notice : 0 }}
-                    [roll:4dF+{{ variables.notice is defined ? variables.notice : 0 }}]
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-2 font-weight-bold">
-                    Contacts
-                </div>
-                <div class="col-md-4">
-                    +{{ variables.contacts is defined and variables.contacts is not empty and variables.contacts > 0
-                    ? variables.contacts : 0 }} [roll:4dF+{{ variables.contacts is defined ? variables.contacts : 0 }}]
-                </div>
-                <div class="col-md-2 font-weight-bold">
-                    Physique
-                </div>
-                <div class="col-md-4">
-                    +{{ variables.physique is defined and variables.physique is not empty and
-                    variables.physique > 0 ? variables.physique : 0 }}
-                    [roll:4dF+{{ variables.physique is defined ? variables.physique : 0 }}]
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-2 font-weight-bold">
-                    Crafts
-                </div>
-                <div class="col-md-4">
-                    +{{ variables.crafts is defined and variables.crafts is not empty and variables.crafts > 0
-                    ? variables.crafts : 0 }} [roll:4dF+{{ variables.crafts is defined ? variables.crafts : 0 }}]
-                </div>
-                <div class="col-md-2 font-weight-bold">
-                    Provoke
-                </div>
-                <div class="col-md-4">
-                    +{{ variables.provoke is defined and variables.provoke is not empty and
-                    variables.provoke > 0 ? variables.provoke : 0 }}
-                    [roll:4dF+{{ variables.provoke is defined ? variables.provoke : 0 }}]
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-2 font-weight-bold">
-                    Deceive
-                </div>
-                <div class="col-md-4">
-                    +{{ variables.deceive is defined and variables.deceive is not empty and variables.deceive > 0
-                    ? variables.deceive : 0 }} [roll:4dF+{{ variables.deceive is defined ? variables.deceive : 0 }}]
-                </div>
-                <div class="col-md-2 font-weight-bold">
-                    Rapport
-                </div>
-                <div class="col-md-4">
-                    +{{ variables.rapport is defined and variables.rapport is not empty and
-                    variables.rapport > 0 ? variables.rapport : 0 }}
-                    [roll:4dF+{{ variables.rapport is defined ? variables.rapport : 0 }}]
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-2 font-weight-bold">
-                    Drive / Ride
-                </div>
-                <div class="col-md-4">
-                    +{{ variables.drive is defined and variables.drive is not empty and variables.drive > 0
-                    ? variables.drive : 0 }} [roll:4dF+{{ variables.drive is defined ? variables.drive : 0 }}]
-                </div>
-                <div class="col-md-2 font-weight-bold">
-                    Resources
-                </div>
-                <div class="col-md-4">
-                    +{{ variables.resources is defined and variables.resources is not empty and
-                    variables.resources > 0 ? variables.resources : 0 }}
-                    [roll:4dF+{{ variables.resources is defined ? variables.resources : 0 }}]
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-2 font-weight-bold">
-                    Empathy
-                </div>
-                <div class="col-md-4">
-                    +{{ variables.empathy is defined and variables.empathy is not empty and variables.empathy > 0
-                    ? variables.empathy : 0 }} [roll:4dF+{{ variables.empathy is defined ? variables.empathy : 0 }}]
-                </div>
-                <div class="col-md-2 font-weight-bold">
-                    Shoot
-                </div>
-                <div class="col-md-4">
-                    +{{ variables.shoot is defined and variables.shoot is not empty and
-                    variables.shoot > 0 ? variables.shoot : 0 }}
-                    [roll:4dF+{{ variables.shoot is defined ? variables.shoot : 0 }}]
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-2 font-weight-bold">
-                    Fight
-                </div>
-                <div class="col-md-4">
-                    +{{ variables.fight is defined and variables.fight is not empty and variables.fight > 0
-                    ? variables.fight : 0 }} [roll:4dF+{{ variables.fight is defined ? variables.fight : 0 }}]
-                </div>
-                <div class="col-md-2 font-weight-bold">
-                    Stealth
-                </div>
-                <div class="col-md-4">
-                    +{{ variables.stealth is defined and variables.stealth is not empty and
-                    variables.stealth > 0 ? variables.stealth : 0 }}
-                    [roll:4dF+{{ variables.stealth is defined ? variables.stealth : 0 }}]
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-2 font-weight-bold">
-                    Investigate
-                </div>
-                <div class="col-md-4">
-                    +{{ variables.investigate is defined and variables.investigate is not empty and
-                    variables.investigate > 0 ? variables.investigate : 0 }}
-                    [roll:4dF+{{ variables.investigate is defined ? variables.investigate : 0 }}]
-                </div>
-                <div class="col-md-2 font-weight-bold">
-                    Will
-                </div>
-                <div class="col-md-4">
-                    +{{ variables.will is defined and variables.will is not empty and
-                    variables.will > 0 ? variables.will : 0 }}
-                    [roll:4dF+{{ variables.will is defined ? variables.will : 0 }}]
-                </div>
+    </div>
+    <section> <!-- Skills Section -->
+        <div class="row">
+            <div class="col-md-12 bg-dark text-white">
+                <h1>Skills</h1>
             </div>
         </div>
-    </div>
+        {{ _self.genSkillRow("Superb", 5, 0, variables) }}
+        {{ _self.genSkillRow("Great", 4, 5, variables) }}
+        {{ _self.genSkillRow("Good", 3, 10, variables) }}
+        {{ _self.genSkillRow("Fair", 2, 15, variables) }}
+        {{ _self.genSkillRow("Average", 1, 20, variables) }}
+    </section>
     <div class="row">
         <div class="col-md-5 border mr-1 mb-1 large-font bg-dark text-white font-weight-bold border border-dark">
             Stunts
@@ -342,4 +212,4 @@
             </div>
         </div>
     </div>
-</div>
+</section>
