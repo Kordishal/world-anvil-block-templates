@@ -13,8 +13,9 @@ h1 {
 }
 
 .bg-white {
-    border-radius: 2px;
-    border-color: gray;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: lightsteelblue;
     background-color: white !important;
 }
 
