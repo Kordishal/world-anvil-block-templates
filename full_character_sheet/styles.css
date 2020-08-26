@@ -85,12 +85,21 @@ input.consequence-text {
     height: 225px;
 }
 
+.stress-column input[type=checkbox] {
+    display: none;
+}
+
 .stress-column input[type=checkbox] + label {
     cursor: pointer;
     width: 73px;
     height: 62px;
     display: inline-block;
-    background: url('https://www.worldanvil.com/uploads/images/f121c92aacc4c6e0c09b81e4868b99a9.png') no-repeat 0 0;
+    margin-left: 10px;
+    background-position: left 0 !important;
+}
+
+.stress-column input[type=checkbox]:checked + label {
+    background-position: left -62px !important;
 }
 
 #input_box_label_1 {
@@ -113,13 +122,5 @@ input.consequence-text {
     opacity: 50%;
 }
 
-.stress-column input[type=checkbox]:checked + label {
-    background-position: 0 -62px;
-}
 
-.stress-column input[type=checkbox] {
-    width: 28px;
-    margin: 0;
-    padding: 0;
-    opacity: 0;
-}
+
