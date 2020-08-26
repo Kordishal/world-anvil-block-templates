@@ -1,54 +1,63 @@
+.header-box {
+    background-color: black;
+    color: white;
+    padding-left: 10px;
+    border-radius: 4px;
+}
 
-h1 {
+.property-box {
+    border: 2px solid black;
+    border-radius: 4px;
+    background-color: white;
+    color: black;
+    padding: 5px 5px 0;
+}
+
+.bottom-margin {
+    margin-bottom: 5px;
+}
+
+.skill-level {
+    width: 15%;
+    padding: 5px;
+}
+
+.skill-roll {
+    width: 10%;
+    padding: 5px;
+}
+
+.skill-name {
+    padding: 5px;
+}
+
+.skill-row {
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 2px;
+    margin-bottom: 4px;
+    margin-left: 0;
+    min-height: 55px;
+}
+
+.full-text-field {
+    min-height: 200px;
+}
+
+.consequence-label {
+    padding-right: 5px;
+    padding-left: 15px;
     font-weight: bold;
+    width: 30%;
+}
+
+.consequence-text {
+    padding-right: 5px;
     padding-left: 5px;
 }
 
-.sl-name-field {
-    font-size: 2.5rem !important;
-    margin-right: 0.5rem !important;
-    border-style: solid !important;
-    border-width: 1px !important;
-    border-color: black !important;
-}
-
-.bg-white {
-    border-radius: 5px;
-    border-style: solid;
-    border-color: lightsteelblue;
-    background-color: white !important;
-}
-
-.bg-dark {
-    border-radius: 2px;
-    background-color: black !important;
-}
-
-.dark-header-center {
-    background-color: black !important;
-    font-weight: bold !important;
-    color: white !important;
-    text-align: center !important;
-    font-size: 2rem !important;
-}
-
-.dark-header {
-    background-color: black !important;
-    font-weight: bold !important;
-    color: white !important;
-    font-size: 2rem !important;
-}
-
-.large-font {
-    font-size: 2rem !important;
-}
-
-.bigger-font {
-    font-size: 1.15rem !important;
-}
-
-.slightly-bigger-font {
-    font-size: 1.05rem !important;
+.consequence-box-height {
+    height: 225px;
 }
 
 input[type=checkbox] + label {
