@@ -31,25 +31,21 @@
                         </div>
                     </div>
                     <div class="col-md-10">
-                        {% if variables.name is defined %}
-                            <div class="property-box bottom-margin">
-                                <label for="name" class="text-muted">Name</label>
-                                <input type="text"
-                                       class="form-control" id="name"
-                                       placeholder="Enter character name ..."
-                                       required="required"
-                                       value="{{ variables.name is defined ? variables.name : '' }}"
-                                       name="name"
-                                >
-                            </div>
-                        {% endif %}
-                        {% if variables.description is defined %}
-                            <div class="property-box">
-                                <label for="description" class="text-muted">Description</label>
-                                <textarea class="form-control mention" id="description" name="description" rows="3"
-                                          placeholder="Enter character description ...">{{ variables.description is defined ? variables.description }}</textarea>
-                            </div>
-                        {% endif %}
+                        <div class="property-box bottom-margin">
+                            <label for="name" class="text-muted">Name</label>
+                            <input type="text"
+                                   class="form-control" id="name"
+                                   placeholder="Enter character name ..."
+                                   required="required"
+                                   value="{{ variables.name is defined ? variables.name : '' }}"
+                                   name="name"
+                            >
+                        </div>
+                        <div class="property-box">
+                            <label for="description" class="text-muted">Description</label>
+                            <textarea class="form-control mention" id="description" name="description" rows="3"
+                                      placeholder="Enter character description ...">{{ variables.description is defined ? variables.description }}</textarea>
+                        </div>
                     </div>
                     <div class="col-md-2">
                         <div class="property-box bottom-margin">
