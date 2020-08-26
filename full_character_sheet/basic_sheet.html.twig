@@ -105,7 +105,7 @@
     </div> <!-- End Extras & Stunts Section -->
     <div class="container"><!-- Stress & Consequences Section -->
         <div class="row">
-            <div class="col-md-6 col-xs-12">
+            <div class="col-md-6 col-xs-12 stress-column">
                 <div class="header-box">
                     <h1>Stress</h1>
                 </div>
@@ -169,9 +169,9 @@
                 <div class="property-box consequence-box-height">
                     <div class="row">
                         <p class="consequence-label">Mild Consequence</p>
-                        <p class="consequence-text">{{ variables.mild_consequence is defined ? variables.mild_consequences : "" }}</p>
+                        <p class="consequence-text">{{ variables.mild_consequence is defined ? variables.mild_consequence : "" }}</p>
                     </div>
-                    {% if variables.mild_consequence_extra_active is defined and variables.mild_consequence_extra_active == 1 %}
+                    {% if variables.mild_consequence_slot_2_active is defined and variables.mild_consequence_slot_2_active == 1 %}
                         <div class="row">
                             <p class="consequence-label">Mild Consequence (Extra)</p>
                             <p class="consequence-text">{{ variables.mild_consequence_extra is defined ? variables.mild_consequence_extra : "" }}</p>

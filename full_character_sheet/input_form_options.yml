@@ -130,9 +130,15 @@ fields:
   mental_stress_box_3:
     input: checkbox
     label: "Mental Stress Box 3"
+  mental_stress_box_3_is_active:
+    input: checkbox
+    label: "Mental Stress Box 3 is Active"
   mental_stress_box_4:
     input: checkbox
     label: "Mental Stress Box 4"
+  mental_stress_box_4_is_active:
+    input: checkbox
+    label: "Mental Stress Box 4 is Active"
   mild_consequence_1:
     input: string
     label: "Mild Consequence"
@@ -140,11 +146,8 @@ fields:
     input: string
     label: "Mild Consequence (Extra)"
   mild_consequence_slot_2_active:
-    input: integer
-    label: "Mild Consequence (Extra) Active"
-    description: "Set this value to 1 to activate the extra mild consequence slot!"
-    min: 0
-    max: 1
+    input: checkbox
+    label: "Mild Consequence Slot 2 Active"
   moderate_consequence:
     input: string
     label: "Moderate Consequence"
@@ -157,5 +160,6 @@ fields:
   extras:
     input: text
     label: "Extras"
-
-
+  notes:
+    input: text
+    label: "Notes"

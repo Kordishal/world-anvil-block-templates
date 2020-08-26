@@ -22,6 +22,10 @@
     padding: 5px;
 }
 
+.fill-form .skill-level {
+    width: 10%;
+}
+
 .skill-roll {
     width: 10%;
     padding: 5px;
@@ -29,6 +33,10 @@
 
 .skill-name {
     padding: 5px;
+}
+
+.fill-form .skill-name {
+    padding: 0;
 }
 
 .skill-row {
@@ -44,6 +52,19 @@
     min-height: 200px;
 }
 
+.hidden {
+    display: none;
+}
+
+select.form-control {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.form-control {
+    border-radius: 2px;
+}
+
 .consequence-label {
     padding-right: 5px;
     padding-left: 15px;
@@ -56,11 +77,15 @@
     padding-left: 5px;
 }
 
+input.consequence-text {
+    width: 50%;
+}
+
 .consequence-box-height {
     height: 225px;
 }
 
-input[type=checkbox] + label {
+.stress-column input[type=checkbox] + label {
     cursor: pointer;
     width: 73px;
     height: 62px;
@@ -88,11 +113,11 @@ input[type=checkbox] + label {
     opacity: 50%;
 }
 
-input[type=checkbox]:checked + label {
+.stress-column input[type=checkbox]:checked + label {
     background-position: 0 -62px;
 }
 
-input[type=checkbox] {
+.stress-column input[type=checkbox] {
     width: 28px;
     margin: 0;
     padding: 0;
