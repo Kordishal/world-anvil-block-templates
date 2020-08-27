@@ -1,4 +1,10 @@
 {% macro genSkillRow(name, modifier, base, variables) %}
+    {%- if variables.skill_id_list is defined and variables.skill_id_list != "" %}
+        {% set skill_list = variables.skill_id_list|split(",") %}
+    {%- else %}
+        {% set list = "Athletics|498418,Burglary|498429,Contacts|498430,Crafts|498435,Deceive|498437,Drive|498438,Empathy|498441,Fight|498442,Investigate|498444,Lore|498447,Notice|498448,Physique|498449,Provoke|498450,Rapport|498452,Shoot|498454,Stealth|498455,Will|498456,Ride|498458" %}
+        {% set skill_list = list|split(",") %}
+    {%- endif %}
     <div class="row skill-row">
         <div class="skill-level">
             {{ name ~ " (+" ~ modifier ~ ")" }}
@@ -6,9 +12,25 @@
         <div class="skill-roll">
             [roll:4dF+{{ modifier }}]
         </div>
-        {% for id in range(base, base + 4) %}
-            <div class="skill-name">{{ attribute(variables, "skill_slot_"~id) }}</div>
-        {% endfor %}
+        {%- for id in range(base, base + 4) %}
+            {% set skill_name = attribute(variables, "skill_slot_"~id) %}
+            {%- if skill_name is empty %}
+                <div class="skill-name"></div>
+            {%- else %}
+                {% set result = "" %}
+                {%- for item in skill_list %}
+                    {% if item starts with skill_name %}
+                        {% set split_item = item|split("|") %}
+                        {% set result = split_item[1] %}
+                    {% endif %}
+                {%- endfor %}
+                {%- if result is empty %}
+                    <div class="skill-name">{{ skill_name }}</div>
+                {%- else %}
+                    <div class="skill-name">[blocklink:{{ result }}]</div>
+                {%- endif %}
+            {%- endif %}
+        {%- endfor %}
     </div>
 {% endmacro genSkillRow %}
 <section>

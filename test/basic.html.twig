@@ -1,3 +1,29 @@
 <div class="container">
-    [block:498381]
+    {% set list = "Athletics|498418,Burglary|498429,Contacts|498430,Crafts|498435,Deceive|498437,Drive|498438,Empathy|498441,Fight|498442,Investigate|498444,Lore|498447,Notice|498448,Physique|498449,Provoke|498450,Rapport|498452,Shoot|498454,Stealth|498455,Will|498456,Ride|498458" %}
+    {% set skill_list = list|split(",") %}
+    {% set source = "Contacts" %}
+    {% set result = "" %}
+    {% for item in skill_list %}
+        {% if item starts with source %}
+            {% set split_item = item|split("|") %}
+            {% set result = split_item[1] %}
+        {% endif %}
+    {% endfor %}
+    {{ result }}
+    [blocklink:{{ result }}]
+    <br>
+    {% set hash = { 'Athletics': '498418'} %}
+    {{ hash }}
+    {{ hash.Athletics }}
+    [blocklink:{{ hash['Athletics'] }}]
+    {% set burglary = hash.Burglary %}
+    {% if burglary is not defined %}
+        Not Defined
+    {% endif %}
+    {% if burglary == "" %}
+        Is Empty
+    {% endif %}
+    {{ hash.Burglary }}
+    {{ hash['Burglary'] }}
+
 </div>
