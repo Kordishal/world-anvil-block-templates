@@ -163,3 +163,9 @@ fields:
   notes:
     input: text
     label: "Notes"
+  skill_text_list:
+    input: string
+    label: "Skill Text List"
+  skill_id_list:
+    input: string
+    label: "Skill Id List"

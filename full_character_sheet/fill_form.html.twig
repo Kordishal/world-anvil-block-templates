@@ -1,5 +1,10 @@
 {% macro genSkillRow(name, modifier, base, variables) %}
-    {% set skillList = ",Athletics,Burglary,Contacts,Crafts,Deceive,Drive,Empathy,Fight,Investigate,Lore,Notice,Physique,Provoke,Rapport,Resources,Shoot,Stealth,Will"|split(',') %}
+    {% set default_skill_list = ",Athletics,Burglary,Contacts,Crafts,Deceive,Drive,Empathy,Fight,Investigate,Lore,Notice,Physique,Provoke,Rapport,Resources,Ride,Shoot,Stealth,Will" %}
+    {% if variables.skill_text_list is defined and variables.skill_text_list != "" %}
+        {% set skill_list = variables.skill_text_list|split(',') %}
+    {% else %}
+        {% set skill_list = default_skill_list|split(',') %}
+    {% endif %}
     <div class="row skill-row">
         <div class="skill-level">
             {{ name ~ " (+" ~ modifier ~ ")" }}
@@ -12,11 +17,12 @@
                         class="form-control"
                         id={{ "skill_slot_"~id }}
                         name={{ "skill_slot_"~id }}>
-                    {% for skill in skillList %}
+                    {% for skill in skill_list %}
                         <option value="{{ skill }}"
                                 {% if attribute(variables, 'skill_slot_'~id) is defined and attribute(variables, 'skill_slot_'~id) == skill %}selected="selected" {% endif %}>{{ skill }}</option>
                     {% endfor %}
-                </select></div>
+                </select>
+            </div>
         {% endfor %}
     </div>
 {% endmacro genSkillRow %}
@@ -313,4 +319,43 @@
             </div>
         </div>
     </div> <!-- End Notes Section -->
+    <div class="container"> <!-- Advanced Section -->
+        <div class="header-box">
+            <h1>Advanced Options</h1>
+        </div>
+        <div class="ibox">
+            <div class="ibox-content">
+                <label for="skill_text_list" class="col-sm-2 control-label">
+                    <h4 class="header-title">Skill Text List</h4>
+                </label>
+                <div class="col-sm-12">
+                    <input value="{{ variables.skill_text_list is defined ? variables.skill_text_list }}"
+                           class="form-control" id="skill_text_list" name="skill_text_list" placeholder=""
+                           type="text"/>
+                    <p class="description form-control-description">This list contains the list of skill names present
+                        in the setting.
+                        The values must be entered as a comma separated list. Add an empty value, otherwise there will
+                        always be a selected skill.
+                        If this is left empty the default fate core skills are used.
+                        If you make a change to this list you absolutely need to save the sheet and then reload the
+                        page. Once done the dropdown
+                        in the skill section will use these values for selection.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="ibox">
+            <div class="ibox-content">
+                <label for="skill_id_list" class="col-sm-2 control-label">
+                    <h4 class="header-title">Skill Id List</h4>
+                </label>
+                <div class="col-sm-12">
+                    <input value="{{ variables.skill_id_list is defined ? variables.skill_id_list }}"
+                           class="form-control" id="skill_id_list" name="skill_id_list" placeholder=""
+                           type="text"/>
+                    <p class="description form-control-description"></p>
+                </div>
+            </div>
+        </div>
+    </div> <!-- End Advanced Section -->
 </section>
