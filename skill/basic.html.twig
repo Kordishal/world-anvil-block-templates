@@ -36,5 +36,12 @@
                 <strong>Defend</strong>: {{ variables.defend is defined ? variables.defend }}
             </p>
         </div>
+        {% if variables.special is defined and variables.special != "" %}
+        <div class="col-md-12">
+            <p>
+                <strong>Special</strong>: {{ variables.special is defined ? variables.special }}
+            </p>
+        </div>
+        {% endif %}
     </div>
 </div>

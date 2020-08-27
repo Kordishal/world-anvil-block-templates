@@ -19,3 +19,7 @@ fields:
     input: text
     label: "Defend"
     description: "Describe the defend action of this skill."
+  special:
+    input: text
+    label: "Special"
+    description: "Some skills have a special action attached to them."
