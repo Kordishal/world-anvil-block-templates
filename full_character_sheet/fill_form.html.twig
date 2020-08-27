@@ -353,7 +353,11 @@
                     <input value="{{ variables.skill_id_list is defined ? variables.skill_id_list }}"
                            class="form-control" id="skill_id_list" name="skill_id_list" placeholder=""
                            type="text"/>
-                    <p class="description form-control-description"></p>
+                    <p class="description form-control-description">
+                        This list can be used to create links to Skill Stat Blocks. It must conform to the following syntax:
+                        "{SKILL_NAME}|{SKILL_ID},{SKILL_NAME}|{SKILL_ID}".
+                        The skill name must be exactly like the name in the skill text list. If no match is found the name is printed without the link.
+                    </p>
                 </div>
             </div>
         </div>
