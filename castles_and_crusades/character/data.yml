@@ -1,0 +1,183 @@
+fields:
+  title:
+    input: string
+    label: "title"
+  race:
+    input: string
+    label: "race"
+  class:
+    input: string
+    label: "race"
+  alignment:
+    input: string
+    label: "alignment"
+  religion:
+    input: string
+    label: "religion"
+  level:
+    input: integer
+    label: "level"
+  language_proficiency:
+    input: text
+    label: "language proficiency"
+  racial_abilities:
+    input: text
+    label: "racial abilities"
+  str_is_primary:
+    input: checkbox
+    label: "str is primary"
+  str_value:
+    input: integer
+    label: "str value"
+  dex_is_primary:
+    input: checkbox
+    label: "dex is primary"
+  dex_value:
+    input: integer
+    label: "dex value"
+  con_is_primary:
+    input: checkbox
+    label: "con is primary"
+  con_value:
+    input: integer
+    label: "con value"
+  int_is_primary:
+    input: checkbox
+    label: "con is primary"
+  int_value:
+    input: integer
+    label: "con value"
+  wis_is_primary:
+    input: checkbox
+    label: "wis is primary"
+  wis_value:
+    input: integer
+    label: "wis value"
+  char_is_primary:
+    input: checkbox
+    label: "char is primary"
+  char_value:
+    input: integer
+    label: "char value"
+  ac_armour:
+    input: integer
+    label: "ac armour"
+  ac_shield:
+    input: integer
+    label: "ac shield"
+  ac_misc:
+    input: integer
+    label: "ac misc"
+  hit_misc:
+    input: integer
+    label: "hit misc"
+  hp:
+    input: integer
+    label: "hp"
+  move:
+    input: integer
+    label: "move"
+  equipment:
+    input: text
+    label: "equipment"
+  spell_0_per_day:
+    input: integer
+    label: "spells 0 per day"
+  spell_0_bonus:
+    input: integer
+    label: "spell 0 bonus"
+  spell_0_known:
+    input: integer
+    label: "spell 0 known"
+  spell_1_per_day:
+    input: integer
+    label: "spells 1 per day"
+  spell_1_bonus:
+    input: integer
+    label: "spell 1 bonus"
+  spell_1_known:
+    input: integer
+    label: "spell 1 known"
+  spell_2_per_day:
+    input: integer
+    label: "spells 2 per day"
+  spell_2_bonus:
+    input: integer
+    label: "spell 2 bonus"
+  spell_2_known:
+    input: integer
+    label: "spell 2 known"
+  spell_3_per_day:
+    input: integer
+    label: "spells 3 per day"
+  spell_3_bonus:
+    input: integer
+    label: "spell 3 bonus"
+  spell_3_known:
+    input: integer
+    label: "spell 3 known"
+  spell_4_per_day:
+    input: integer
+    label: "spells 4 per day"
+  spell_4_bonus:
+    input: integer
+    label: "spell 4 bonus"
+  spell_4_known:
+    input: integer
+    label: "spell 4 known"
+  spell_5_per_day:
+    input: integer
+    label: "spells 5 per day"
+  spell_5_bonus:
+    input: integer
+    label: "spell 5 bonus"
+  spell_5_known:
+    input: integer
+    label: "spell 5 known"
+  spell_6_per_day:
+    input: integer
+    label: "spells 6 per day"
+  spell_6_bonus:
+    input: integer
+    label: "spell 6 bonus"
+  spell_6_known:
+    input: integer
+    label: "spell 6 known"
+  spell_7_per_day:
+    input: integer
+    label: "spells 7 per day"
+  spell_7_bonus:
+    input: integer
+    label: "spell 7 bonus"
+  spell_7_known:
+    input: integer
+    label: "spell 7 known"
+  spell_8_per_day:
+    input: integer
+    label: "spells 8 per day"
+  spell_8_bonus:
+    input: integer
+    label: "spell 8 bonus"
+  spell_8_known:
+    input: integer
+    label: "spell 8 known"
+  spell_9_per_day:
+    input: integer
+    label: "spells 9 per day"
+  spell_9_bonus:
+    input: integer
+    label: "spell 9 bonus"
+  spell_9_known:
+    input: integer
+    label: "spell 9 known"
+  spell_list:
+    input: text
+    label: "spell_list"
+  treasures:
+    input: text
+    label: "treasures"
+  notes:
+    input: text
+    label: "notes"
+
+
