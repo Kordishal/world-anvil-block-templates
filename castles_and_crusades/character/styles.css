@@ -1,1 +1,60 @@
+.desc-box {
+    border-radius: 4px;
+    margin-bottom: 15px;
+    padding: 5px;
+    box-shadow: 0 0 5px 1px #D49839;
+}
 
+.margin-left {
+    margin-left: 15px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.attribute-block {
+    border: #AD4420 solid 3px;
+    border-radius: 12px;
+}
+
+.attribute-header-row {
+    text-align: center;
+    border-bottom: #AD4420 solid 3px;
+    padding: 5px 0 5px 0;
+}
+
+.attribute-row {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.move-value {
+    text-align: center;
+    border: #AD4420 solid 1px;
+    border-radius: 200px;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.move-text {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 200;
+
+}
+
+.fullsheet {
+    color: #404241;
+    border: #AD4420 solid 10px;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.outside {
+    padding: 10px;
+    background-color: whitesmoke;
+}
