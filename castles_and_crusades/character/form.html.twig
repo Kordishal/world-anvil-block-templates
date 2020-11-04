@@ -50,50 +50,76 @@
     <div class="fullsheet">
         <div class="row">
             <div class="col-md-6 col-xs-12">
-                <h1>{{ variables.name }} </h1>
+                <label class="hidden" for="name">Name</label>
+                <h1><input value="{{ variables.name is defined ? variables.name }}" required="required"
+                           class="text-form-control" id="name" name="name" placeholder="Name"
+                           title="Name of the character."
+                           type="text"/></h1>
                 <div class="row">
                     <div class="col-md desc-box">
-                        <div class="text-muted">Title</div>
-                        <div class="text-center text-strong">{{ variables.title }}</div>
+                        <label for="title" class="text-muted">Title</label>
+                        <div class="text-center text-strong"><input
+                                    value="{{ variables.title is defined ? variables.title }}" class="text-form-control"
+                                    id="title" name="title" placeholder="" type="text"/></div>
                     </div>
                     <div class="col-md desc-box margin-left">
-                        <div class="text-muted">Alignment</div>
-                        <div class="text-center text-strong">{{ variables.alignment }}</div>
+                        <label for="alignment" class="text-muted">Alignment</label>
+                        <div class="text-center text-strong"><input
+                                    value="{{ variables.alignment is defined ? variables.alignment }}"
+                                    class="text-form-control"
+                                    id="alignment" name="alignment" placeholder="" type="text"/></div>
                     </div>
                     <div class="col-md desc-box margin-left">
-                        <div class="text-muted">Religion</div>
-                        <div class="text-center text-strong">{{ variables.religion }}</div>
+                        <label for="religion" class="text-muted">Religion</label>
+                        <div class="text-center text-strong"><input
+                                    value="{{ variables.religion is defined ? variables.religion }}"
+                                    class="text-form-control"
+                                    id="religion" name="religion" placeholder="" type="text"/></div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md desc-box">
-                        <div class="text-muted">Race</div>
-                        <div class="text-center text-strong">{{ variables.race }}</div>
+                        <label for="race" class="text-muted">Race</label>
+                        <div class="text-center text-strong"><input
+                                    value="{{ variables.race is defined ? variables.race }}" class="text-form-control"
+                                    id="race" name="race" placeholder="" type="text"/></div>
                     </div>
                     <div class="col-md desc-box margin-left">
-                        <div class="text-muted">Racial Abilities</div>
-                        <div class="text-center text-strong">{{ variables.racial_abilities }}</div>
+                        <label for="racial_abilities" class="text-muted">Racial Abilities</label>
+                        <div class="text-center text-strong"><input
+                                    value="{{ variables.racial_abilities is defined ? variables.racial_abilities }}"
+                                    class="text-form-control"
+                                    id="racial_abilities" name="racial_abilities" placeholder="" type="text"/></div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md desc-box">
-                        <div class="text-muted">Level</div>
-                        <div class="text-center text-strong">{{ variables.level }}</div>
+                        <label for="level" class="text-muted">Level</label>
+                        <div class="text-center text-strong"><input
+                                    value="{{ variables.level is defined ? variables.level }}" class="text-form-control"
+                                    id="level" name="level" type="number" min=0/></div>
                     </div>
                     <div class="col-md desc-box margin-left">
-                        <div class="text-muted">Experience</div>
-                        <div class="text-center text-strong">{{ variables.experience }}</div>
+                        <label for="experience" class="text-muted">Experience</label>
+                        <div class="text-center text-strong"><input
+                                    value="{{ variables.experience is defined ? variables.experience }}"
+                                    class="text-form-control"
+                                    id="experience" name="experience" type="number" min=0/></div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md desc-box">
-                        <div class="text-muted">Description</div>
-                        <div class="text-center text-strong">{{ variables.description }}</div>
+                        <label class="text-muted" for="description">Description</label>
+                        <div class="text-center text-strong">
+                            <textarea class="text-form-control mention" id="description"
+                                      name="description" rows="3"
+                                      placeholder="">{{ variables.description is defined ? variables.description }}
+                            </textarea>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="logo col-md-6 hidden-xs">
-                [img:1612415|right|nolink]
+            <div class="col-md-6">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="move-value margin-top">{{ variables.hp_current }} / {{ variables.hp_max }}</div>
@@ -121,7 +147,9 @@
                 <div class="attribute-block">
                     <div class="row attribute-header-row">
                         <div class="col-md-2">Name</div>
-                        <div class="col-md-2">[tooltip:All bonuses which are applied to the hit roll with the specific weapon.]Attack bonus[/tooltip]</div>
+                        <div class="col-md-2">[tooltip:All bonuses which are applied to the hit roll with the specific
+                            weapon.]Attack bonus[/tooltip]
+                        </div>
                         <div class="col-md-2">Hit roll</div>
                         <div class="col-md-2">Damage bonus</div>
                         <div class="col-md-2">Damage roll</div>

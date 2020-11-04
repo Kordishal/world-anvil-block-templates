@@ -26,6 +26,9 @@ fields:
   racial_abilities:
     input: text
     label: "racial abilities"
+  description:
+    input: text
+    label: "description"
   str_is_primary:
     input: checkbox
     label: "str is primary"
@@ -221,9 +224,6 @@ fields:
   weapon_name_1:
     input: string
     label: "weapon name 1"
-  weapon_is_ranged_1:
-    input: checkbox
-    label: "weapon is ranged 1"
   weapon_bth_1:
     input: integer
     min: 0
@@ -243,9 +243,6 @@ fields:
   weapon_name_2:
     input: string
     label: "weapon name 2"
-  weapon_is_ranged_2:
-    input: checkbox
-    label: "weapon is ranged 2"
   weapon_bth_2:
     input: integer
     min: 0
@@ -265,9 +262,6 @@ fields:
   weapon_name_3:
     input: string
     label: "weapon name 3"
-  weapon_is_ranged_3:
-    input: checkbox
-    label: "weapon is ranged 3"
   weapon_bth_3:
     input: integer
     min: 0
@@ -287,9 +281,6 @@ fields:
   weapon_name_4:
     input: string
     label: "weapon name 4"
-  weapon_is_ranged_4:
-    input: checkbox
-    label: "weapon is ranged 4"
   weapon_bth_4:
     input: integer
     min: 0
@@ -309,9 +300,6 @@ fields:
   weapon_name_5:
     input: string
     label: "weapon name 5"
-  weapon_is_ranged_5:
-    input: checkbox
-    label: "weapon is ranged 5"
   weapon_bth_5:
     input: integer
     min: 0
@@ -331,9 +319,6 @@ fields:
   weapon_name_6:
     input: string
     label: "weapon name 6"
-  weapon_is_ranged_7:
-    input: checkbox
-    label: "weapon is ranged 7"
   weapon_bth_6:
     input: integer
     min: 0

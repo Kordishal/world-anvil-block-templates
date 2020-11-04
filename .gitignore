@@ -1,1 +1,3 @@
 .idea
+
+rsync -av --del aleph.gutenberg.org::gutenberg --exclude "*.jpg" --exclude "*.JPG" --exclude "*.iso" --exclude "*.zip" --exclude "*.png" --exclude "*.mp4" --exclude "*.mp3" --exclude "*.gif" --exclude "*.iso.*" --exclude "*.rar" --exclude "*.ogg" --exclude "*.m4b" --exclude "*.spx" --exclude "*.mpeg" --exclude "*.epub" --exclude "*.mobi" --exclude "*.gzip" .
