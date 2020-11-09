@@ -17,6 +17,16 @@
     margin-top: 15px;
 }
 
+.padding {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.form-control {
+    padding: 2px 2px 2px 4px;
+    display: inline-flex
+}
+
 .logo {
     padding-left: 20px;
 }
