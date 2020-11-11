@@ -92,11 +92,16 @@
                     </div>
                 </div>
             </div>
-            <div class="logo col-md-6 hidden-xs">
-                [img:1612415|right|nolink]
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-xl-12 d-hidden">
+                        [img:1612415|none|nolink]
+                    </div>
+                </div>
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="move-value margin-top">{{ variables.hp_current }} / {{ variables.hp_max }}</div>
+                        <div class="move-value margin-top">{% if variables.hp_current %}{{ variables.hp_current }}{% else %}{{ variables.hp_max }}{% endif %}
+                            / {{ variables.hp_max }}</div>
                         <div class="move-text"><h4>HP</h4></div>
                     </div>
                     <div class="col-md-6">
@@ -121,7 +126,9 @@
                 <div class="attribute-block">
                     <div class="row attribute-header-row">
                         <div class="col-md-2">Name</div>
-                        <div class="col-md-2">[tooltip:All bonuses which are applied to the hit roll with the specific weapon.]Attack bonus[/tooltip]</div>
+                        <div class="col-md-2">[tooltip:All bonuses which are applied to the hit roll with the specific
+                            weapon.]Attack bonus[/tooltip]
+                        </div>
                         <div class="col-md-2">Hit roll</div>
                         <div class="col-md-2">Damage bonus</div>
                         <div class="col-md-2">Damage roll</div>
@@ -175,29 +182,29 @@
                 </div>
                 <div class="row">
                     <div class="col-md-3">
-                        <div class="move-value-small">{{ variables.currency_cp }}</div>
+                        <div class="move-value-small">{% if variables.currency_cp %}{{ variables.currency_cp }}{% else %}0{% endif %}</div>
                         <div class="move-text-small"><h4>CP</h4></div>
                     </div>
                     <div class="col-md-3">
-                        <div class="move-value-small">{{ variables.currency_sp }}</div>
+                        <div class="move-value-small">{% if variables.currency_sp %}{{ variables.currency_sp }}{% else %}0{% endif %}</div>
                         <div class="move-text-small"><h4>SP</h4></div>
                     </div>
                     <div class="col-md-3">
-                        <div class="move-value-small">{{ variables.currency_gp }}</div>
+                        <div class="move-value-small">{% if variables.currency_gp %}{{ variables.currency_gp }}{% else %}0{% endif %}</div>
                         <div class="move-text-small"><h4>GP</h4></div>
                     </div>
                     <div class="col-md-3">
-                        <div class="move-value-small">{{ variables.currency_pp }}</div>
+                        <div class="move-value-small">{% if variables.currency_pp %}{{ variables.currency_pp }}{% else %}0{% endif %}</div>
                         <div class="move-text-small"><h4>PP</h4></div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="move-value-small">{{ variables.currency_gems }}</div>
+                        <div class="move-value-small">{% if variables.currency_gems %}{{ variables.currency_gems }}{% else %}0{% endif %}</div>
                         <div class="move-text-small"><h4>GEMS</h4></div>
                     </div>
                     <div class="col-md-6">
-                        <div class="move-value-small">{{ variables.currency_jewelry }}</div>
+                        <div class="move-value-small">{% if variables.currency_jewelry %}{{ variables.currency_jewelry }}{% else %}0{% endif %}</div>
                         <div class="move-text-small"><h4>JEWELRY</h4></div>
                     </div>
                 </div>

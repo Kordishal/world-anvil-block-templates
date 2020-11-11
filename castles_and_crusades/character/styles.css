@@ -27,10 +27,6 @@
     display: inline-flex
 }
 
-.logo {
-    padding-left: 20px;
-}
-
 .attribute-block {
     border: #AD4420 solid 2px;
     border-radius: 12px;
