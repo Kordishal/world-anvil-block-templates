@@ -1,5 +1,4 @@
-# World Anvil Block Templates
+### Personal Block Templates
 
-Block &amp; Sheet templates for the Fate Core Ruleset.
-
-Guildmembers+ can import these to create nicer sheets for Fate Characters.
+Contains the code for block templates I use in my worlds for organizational purposes.
+Currently none of them are actually in use though.

@@ -1,0 +1,45 @@
+fields:
+  target:
+    input: string
+    label: "Target"
+    description: "The target of the relationship. Linked."
+  type:
+    input: select
+    label: "Type"
+    description: "The type of the relationship"
+    options:
+      Romantic: Romantic
+      Professional: Professional
+      Related: Related
+  status:
+    input: select
+    label: "Status"
+    description: "What is the status of the relationship."
+    options:
+      None: None
+      Divorced: Divorced
+  quality:
+    input: select
+    label: "Quality"
+    description: "The quality of the relationship."
+    options:
+      None: None
+      Strained: Strained
+      Friendly: Friendly
+      Stable: Stable
+  refersToAs:
+    input: string
+    label: "Refers to as"
+    description: "How the person refers to the other person in front of others."
+  callName:
+    input: string
+    label: "Call Name"
+    description: "Most common call name."
+  startDate:
+    input: string
+    label: "Start Date"
+    description: "The date when this relationship started."
+  endDate:
+    input: string
+    label: "End Date"
+    description: "The date when this relationship ended."

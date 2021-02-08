@@ -1,17 +1,17 @@
 fields:
-  permission:
+  title:
     input: string
-    label: "Permission"
-    description: "The permission must be satisfied by a player to get this extra."
-  cost:
+    label: "Title"
+    description: "Title of the project."
+  goal:
     input: string
-    label: "Cost"
-    description: "The cost to unlocking this extra."
-  description:
+    label: "Goal"
+    description: "The goal of the project. What should be improved?"
+  scope:
     input: text
-    label: "Description"
-    description: "Long form description for this skill."
-  aspects:
+    label: "Scope"
+    description: "Define a scope for the goal."
+  article_1:
     input: string
     label: "Aspects"
     description: "Aspects attached to this extra."

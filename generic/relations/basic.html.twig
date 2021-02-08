@@ -1,0 +1,67 @@
+<div class="relationship">
+    <div class="row">
+        <div class="col-md-12"><h5>{{ variables.target }}</h5></div>
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-12">
+                    <b>Type</b>
+                </div>
+                <div class="col-md-12">
+                    {{ variables.type }}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <b>Status</b>
+                </div>
+                <div class="col-md-12">
+                    {{ variables.status }}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <b>Quality</b>
+                </div>
+                <div class="col-md-12">
+                    {{ variables.quality }}
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-12">
+                    <b>Refers to as</b>
+                </div>
+                <div class="col-md-12">
+                    {{ variables.refers_to_as }}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <b>Call Name</b>
+                </div>
+                <div class="col-md-12">
+                    {{ variables.call_name }}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <b>Began</b>
+                </div>
+                <div class="col-md-12">
+                    {{ variables.start_date }}
+                </div>
+            </div>
+            {% if variables.end_date is defined and variables.end_date is not empty %}
+                <div class="row">
+                    <div class="col-md-12">
+                        <b>Ended</b>
+                    </div>
+                    <div class="col-md-12">
+                        {{ variables.end_date }}
+                    </div>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
